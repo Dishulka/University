@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Admin\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Admin\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_C20_chess.-26866889.00" t="ExcludeRecursive" />
+    <e p="D:\Education\University\2_semestr\ООП\Programms\C20_chess" t="IncludeFlat">
+      <e p="C20_chess" t="IncludeRecursive">
+        <e p="C20_chess.vcxproj" t="IncludeRecursive" />
+        <e p="chess.cpp" t="Include" />
+        <e p="chesslib.cpp" t="Include" />
+        <e p="chesslib.h" t="Include" />
+        <e p="figure.cpp" t="Include" />
+        <e p="Figure.h" t="Include" />
+      </e>
+      <e p="C20_chess.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

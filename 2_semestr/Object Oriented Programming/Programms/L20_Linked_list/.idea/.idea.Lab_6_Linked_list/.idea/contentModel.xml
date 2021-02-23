@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Admin\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Admin\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Lab_6_Linked_list.-236819221.00" t="ExcludeRecursive" />
+    <e p="D:\Education\University\2_semestr\ООП\Programms\L20_Linked_list" t="IncludeFlat">
+      <e p="Lab_6_Linked_list" t="IncludeRecursive">
+        <e p="Dlink.cpp" t="Include" />
+        <e p="Dlink.h" t="Include" />
+        <e p="Lab_6_Linked_list.vcxproj" t="IncludeRecursive" />
+        <e p="Symlink.cpp" t="Include" />
+      </e>
+      <e p="Lab_6_Linked_list.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
