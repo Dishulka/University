@@ -1,0 +1,57 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = 11.9136849013189
+xMax = 31.0214430508188
+xTickUnit = 1
+xGridUnit = 1
+xShowGrid = 1
+xAutoTick = 0
+yMin = -1.14358085339095
+yMax = 3.44043739490519
+yTickUnit = 0.2
+yGridUnit = 0.2
+yShowGrid = 1
+yLabel = f(x)
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = x^2/175-16x/175+64/175
+From = 8
+To = 15
+Color = clBlack
+Size = 3
+
+[Func2]
+FuncType = 0
+y = 2x/25-23/25
+From = 15
+To = 20
+Color = clBlack
+Size = 3
+
+[Func3]
+FuncType = 0
+y = -x^2/275+62x/275-653/275
+From = 20
+To = 31
+Color = clBlack
+Size = 3
+
+[Data]
+TextLabelCount = 0
+FuncCount = 3
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

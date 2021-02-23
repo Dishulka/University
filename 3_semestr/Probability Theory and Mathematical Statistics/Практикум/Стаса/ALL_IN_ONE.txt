@@ -1,0 +1,476 @@
+Transact.h
+
+#pragma once
+#ifndef TRANSACTH
+
+class Transact 
+{
+private:
+	static unsigned long long int _currID;
+	unsigned long long _ID;
+	double _timeNextEvent;
+	unsigned int _state;
+public:
+	Transact();
+	unsigned long long int getID();
+	double getTimeNextEvent();
+	unsigned int getState();
+	void setTimeNextEvent(double input);
+	void setState(unsigned int input);
+};
+
+#define TRANSACTH
+#endif // !TRANSACTH
+
+Transact.cpp
+
+#include "Transact.h"
+unsigned long long int Transact::_currID = 0;
+
+Transact::Transact()
+{
+	_ID = _currID;
+	_currID++;
+	_state=0;
+	_timeNextEvent = 0;
+}
+
+unsigned long long int Transact::getID()
+{
+	return _ID;
+}
+
+double Transact::getTimeNextEvent()
+{
+	return _timeNextEvent;
+}
+
+unsigned int Transact::getState()
+{
+	return _state;
+}
+
+void Transact::setTimeNextEvent(double input)
+{
+	_timeNextEvent = input;
+}
+
+void Transact::setState(unsigned int input)
+{
+	_state = input;
+}
+
+State.h
+
+#pragma once
+#ifndef STATEH
+#define STATEH
+
+#include "Transact.h"
+#include <fstream>
+class State
+{
+protected:
+	static unsigned long long int _currID;
+	unsigned long long int _ID;
+	unsigned int _nextState;
+public:
+	State();
+	unsigned long long int getID();
+	void setNextState(unsigned int input);
+	virtual void useTransact(Transact& transact, std::ofstream& file) = 0;
+};
+
+#endif // !STATEH
+
+State.cpp
+
+#include "State.h"
+unsigned long long int State::_currID = 0;
+State::State()
+{
+	_ID = _currID;
+	_currID++;
+	_nextState = 0;
+}
+
+unsigned long long int State::getID()
+{
+	return _ID;
+}
+
+void State::setNextState(unsigned int input)
+{
+	_nextState = input;
+}
+
+Channel.h
+
+#pragma once
+#ifndef CHANNELH
+#define CHANNELH
+
+#include "State.h"
+#include "Queue.h"
+
+class Channel : public State
+{
+private:
+	unsigned long long int _MIN;
+	unsigned long long int _MAX;
+	bool _isOccupied;
+	Transact* _occupied;
+	Queue _queue;
+public:
+	Channel(unsigned long long int min, unsigned long long int max);
+	int getQueueSize();
+	bool isOccupied();
+	void useTransact(Transact& transact, std::ofstream& file);
+
+};
+
+#endif // !CHANNELH
+
+Channel.cpp
+
+#include "Channel.h"
+
+Channel::Channel(unsigned long long int min, unsigned long long int max) : State(), _queue()
+{
+	_occupied = NULL;
+	_isOccupied = false;
+	_MIN = min;
+	_MAX = max;
+}
+
+int Channel::getQueueSize()
+{
+	return _queue.getSize();
+}
+
+bool Channel::isOccupied()
+{
+	return _isOccupied;
+}
+
+void Channel::useTransact(Transact& transact, std::ofstream& file)
+{
+	if (!_isOccupied)
+	{
+		file << "At " << transact.getTimeNextEvent() << " transact with ID " << transact.getID() << " has start  processing at " << _ID <<" operator."<< std::endl;
+		transact.setTimeNextEvent(transact.getTimeNextEvent() + (double)(_MIN + ((unsigned long long int)rand() % ((unsigned long long int)_MAX - 1)) + (double)rand() / RAND_MAX));
+		_occupied = &transact;
+		_isOccupied = true;
+	}
+	else if (&transact == _occupied) 
+	{
+		file << "At " << transact.getTimeNextEvent() << " transact with ID " << transact.getID() << " has ended processing at " << _ID <<" operator."<< std::endl;
+		transact.setState(_nextState);
+		if (_queue.getSize() > 0) 
+		{
+			Transact* next = _queue.ejectTransact();
+			file << "At " << next->getTimeNextEvent() << " transact with ID " << next->getID() << " has start processing at " << _ID << " operator from queue." << std::endl;
+			next->setTimeNextEvent(next->getTimeNextEvent() + (double)(_MIN + ((unsigned long long int)rand() % ((unsigned long long int)_MAX - 1)) + (double)rand() / RAND_MAX));
+			_occupied = next;
+		}
+		else 
+		{
+			_isOccupied = false;
+		}
+	}
+	else
+	{
+		if (!_queue.hasTransact(transact))
+		{
+			_queue.addTransact(&transact);
+			file << "At " << transact.getTimeNextEvent() << " transact with ID " << transact.getID() << " has gone to queue " << _ID <<"."<< std::endl;
+		}
+		transact.setTimeNextEvent(_occupied->getTimeNextEvent());
+	}
+}
+
+Queue.h
+
+#pragma once
+#ifndef QUEUEH
+#define QUEUEH
+
+#include <list>
+#include "Transact.h"
+#include <iterator>
+class Queue
+{
+private:
+	std::list <Transact*> _transacts;
+	
+public:
+	Queue();
+	int getSize();
+	void addTransact(Transact*);
+	Transact* ejectTransact();
+	bool hasTransact(Transact& transact);
+
+};
+
+#endif // !QUEUEH
+
+Queue.cpp
+
+#include "Queue.h"
+
+Queue::Queue()
+{
+}
+
+int Queue::getSize()
+{
+	return _transacts.size();
+}
+
+void Queue::addTransact(Transact* input)
+{
+	_transacts.push_back(input);
+}
+
+Transact* Queue::ejectTransact()
+{
+	Transact* ejected = _transacts.front();
+	_transacts.pop_front();
+	return ejected;
+}
+
+bool Queue::hasTransact(Transact& transact)
+{
+	std::list <Transact*> ::iterator iter = _transacts.begin();
+	for (; iter != _transacts.end(); iter++)
+	{
+		if ((**iter).getID() == transact.getID())
+			return true;
+	}
+	return false;
+}
+
+Generate.h
+
+#pragma once
+#ifndef GENERATEH
+#define GENERATEH
+
+#include "State.h"
+#include <cstdlib>
+
+class Generate : public State
+{
+private:
+	double _time;
+	unsigned long long int _MAX;
+	unsigned long long int _MIN;
+public:
+	Generate(unsigned long long int, unsigned long long int);
+	double getTime();
+	void useTransact(Transact& transact, std::ofstream& file);
+};
+
+#endif // !GENERATEH
+
+Generate.cpp
+
+#include "Generate.h"
+
+Generate::Generate(unsigned long long int min, unsigned long long int max) :State()
+{
+	_time = 0;
+	_MIN = min;
+	_MAX = max;
+}
+
+double Generate::getTime()
+{
+	_time += (double)(_MIN + ((unsigned long long int)rand() % ((unsigned long long int)_MAX - 1)) + (double)rand() / RAND_MAX);
+	return _time;
+}
+
+void Generate::useTransact(Transact& transact, std::ofstream& file)
+{
+	transact.setState(_nextState);
+	file << "At " << transact.getTimeNextEvent() << " transact with ID " << transact.getID() << " generated." << std::endl;
+}
+
+Terminate.h
+
+#pragma once
+#ifndef TERMANATEH
+#define TERMANATEH
+
+#include "State.h"
+class Terminate : public State
+{
+private:
+
+public:
+	Terminate();
+	void useTransact(Transact& transact, std::ofstream& file);
+};
+
+#endif // !TERMANATEH
+
+Terminate.cpp
+
+#include "Terminate.h"
+
+Terminate::Terminate() : State()
+{
+}
+
+void Terminate::useTransact(Transact& transact, std::ofstream& file)
+{
+	file << "At " << transact.getTimeNextEvent() << " transact with ID " << transact.getID() << " leave." << std::endl;
+	delete &transact;
+}
+
+
+
+
+main.cpp
+
+#include <iostream>
+#include <fstream>
+#include <list>
+#include <iterator>
+
+#include "Channel.h"
+#include "Generate.h"
+#include "Queue.h"
+#include "State.h"
+#include "Terminate.h"
+#include "Transact.h"
+
+using namespace std;
+
+int main()
+{
+	//Start init
+	unsigned long long int r1 = 11;
+	unsigned long long int g1 = 10;
+	unsigned long long int b1 = 11;
+	std::cout << "Enter random seed: ";
+	unsigned int rnd=20;
+	//std::cin >> rnd;
+	std::cout << "Enter time of simulation: ";
+	int endTime=60;
+	//std::cin >> endTime;
+	std::ofstream file;
+	file.open("result.txt");
+	if (!file.is_open())
+	{
+		std::cout << "Cannot use file" << std::endl;
+		return 1;
+	}
+	srand(rnd);
+
+	//Create generator transacts
+	Generate generate(0, r1 + g1 + b1);
+	generate.setNextState(1);
+
+	//Create channels
+	Channel* channels[2];
+	channels[0] = new Channel(r1, r1 + g1 + b1);
+	channels[0]->setNextState(4);
+	channels[1] = new Channel(g1, r1 + g1 + b1);
+	channels[1]->setNextState(4);
+
+	//Create TERMINATOR
+	Terminate Terminator;
+
+	// Create list of all transacts
+	std::list <Transact*> transacts;
+	Transact* end = new Transact();
+	end->setState(0);
+	end->setTimeNextEvent(endTime);
+	transacts.push_front(end);
+	Transact* start = new Transact();
+	start->setState(0);
+	start->setTimeNextEvent(generate.getTime());
+	transacts.push_front(start);
+	list <Transact*> ::iterator iter;
+
+	//Start main cycle
+
+	bool isEnd = false;
+	while (!isEnd)
+	{
+		double minTime = (*transacts.begin())->getTimeNextEvent();
+		for (iter = transacts.begin(); iter != transacts.end(); ++iter)
+		{
+			minTime = minTime > (*iter)->getTimeNextEvent() ? (*iter)->getTimeNextEvent() : minTime;
+		}
+		for (iter = transacts.begin(); iter != transacts.end(); ++iter)
+		{
+			if ((*iter)->getTimeNextEvent() == minTime)
+			{
+				bool flag;
+				switch ((*iter)->getState())
+				{
+				case 0:
+					if ((**iter).getID() == (*end).getID())
+					{
+						isEnd = true;
+					}
+					else
+					{
+						generate.useTransact(**iter, file);
+						Transact* newTrans = new Transact();
+						newTrans->setTimeNextEvent(generate.getTime());
+						transacts.push_back(newTrans);
+					}
+					break;
+				case 1:
+					flag = false;
+					for (int i = 0; i < sizeof(channels) / sizeof(*channels); ++i) {
+						if (!(channels[i]->isOccupied())) {
+							(*iter)->setState(i + 2);
+							channels[i]->useTransact(**iter, file);
+							flag = true;
+							break;
+						}
+					}
+					if (!flag) 
+					{
+						int min = channels[0]->getQueueSize();
+						int minIndex = 0;
+						for (int i = 0; i < sizeof(channels) / sizeof(*channels); ++i) 
+						{
+							if (channels[i]->getQueueSize() < min) {
+								minIndex = i;
+								min = channels[i]->getQueueSize();
+							}
+						}
+						(*iter)->setState(minIndex + 2);
+						channels[minIndex]->useTransact(**iter, file);
+					}
+					break;
+				case 2:
+					channels[0]->useTransact(**iter, file);
+					break;
+				case 3:
+					channels[1]->useTransact(**iter, file);
+					break;
+				case 4:
+					Terminator.useTransact(**iter, file);
+					iter = transacts.erase(iter);
+					break;
+				}
+			}
+		}
+
+
+
+
+
+
+	}
+
+	//Close file
+	file.close();
+	return 0;
+}

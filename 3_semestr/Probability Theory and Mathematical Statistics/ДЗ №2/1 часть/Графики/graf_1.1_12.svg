@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1756px" height="943px" viewBox="0 0 1756 943" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1731" cy="20" r="5" />
+    <text x="1711" y="16" font-family="Times New Roman" font-size="11" fill="#000000">Ряд 1</text>
+    <rect stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" x="1706.5" y="0.5" width="49" height="29" />
+  </g>
+  <clipPath id="clippath1">
+    <path d="M-1,-1 H1756 V942H-1 z M1705,-1 H1757 V31 H1705 z" clip-rule="evenodd" />
+  </clipPath>
+  <g clip-path="url(#clippath1)">
+    <text x="41" y="886" font-family="Times New Roman" font-size="13" fill="#000000">-1.5</text>
+    <text x="96" y="886" font-family="Times New Roman" font-size="13" fill="#000000">-1</text>
+    <text x="142" y="886" font-family="Times New Roman" font-size="13" fill="#000000">-0.5</text>
+    <text x="244" y="886" font-family="Times New Roman" font-size="13" fill="#000000">0.5</text>
+    <text x="299" y="886" font-family="Times New Roman" font-size="13" fill="#000000">1</text>
+    <text x="345" y="886" font-family="Times New Roman" font-size="13" fill="#000000">1.5</text>
+    <text x="399" y="886" font-family="Times New Roman" font-size="13" fill="#000000">2</text>
+    <text x="445" y="886" font-family="Times New Roman" font-size="13" fill="#000000">2.5</text>
+    <text x="500" y="886" font-family="Times New Roman" font-size="13" fill="#000000">3</text>
+    <text x="546" y="886" font-family="Times New Roman" font-size="13" fill="#000000">3.5</text>
+    <text x="600" y="886" font-family="Times New Roman" font-size="13" fill="#000000">4</text>
+    <text x="646" y="886" font-family="Times New Roman" font-size="13" fill="#000000">4.5</text>
+    <text x="701" y="886" font-family="Times New Roman" font-size="13" fill="#000000">5</text>
+    <text x="747" y="886" font-family="Times New Roman" font-size="13" fill="#000000">5.5</text>
+    <text x="801" y="886" font-family="Times New Roman" font-size="13" fill="#000000">6</text>
+    <text x="848" y="886" font-family="Times New Roman" font-size="13" fill="#000000">6.5</text>
+    <text x="902" y="886" font-family="Times New Roman" font-size="13" fill="#000000">7</text>
+    <text x="948" y="886" font-family="Times New Roman" font-size="13" fill="#000000">7.5</text>
+    <text x="1002" y="886" font-family="Times New Roman" font-size="13" fill="#000000">8</text>
+    <text x="1049" y="886" font-family="Times New Roman" font-size="13" fill="#000000">8.5</text>
+    <text x="1103" y="886" font-family="Times New Roman" font-size="13" fill="#000000">9</text>
+    <text x="1149" y="886" font-family="Times New Roman" font-size="13" fill="#000000">9.5</text>
+    <text x="1200" y="886" font-family="Times New Roman" font-size="13" fill="#000000">10</text>
+    <text x="1247" y="886" font-family="Times New Roman" font-size="13" fill="#000000">10.5</text>
+    <text x="1301" y="886" font-family="Times New Roman" font-size="13" fill="#000000">11</text>
+    <text x="1347" y="886" font-family="Times New Roman" font-size="13" fill="#000000">11.5</text>
+    <text x="1401" y="886" font-family="Times New Roman" font-size="13" fill="#000000">12</text>
+    <text x="1448" y="886" font-family="Times New Roman" font-size="13" fill="#000000">12.5</text>
+    <text x="1502" y="886" font-family="Times New Roman" font-size="13" fill="#000000">13</text>
+    <text x="1548" y="886" font-family="Times New Roman" font-size="13" fill="#000000">13.5</text>
+    <text x="1603" y="886" font-family="Times New Roman" font-size="13" fill="#000000">14</text>
+    <text x="1649" y="886" font-family="Times New Roman" font-size="13" fill="#000000">14.5</text>
+    <text x="1703" y="886" font-family="Times New Roman" font-size="13" fill="#000000">15</text>
+    <text x="179" y="800" font-family="Times New Roman" font-size="13" fill="#000000">0.1</text>
+    <text x="179" y="726" font-family="Times New Roman" font-size="13" fill="#000000">0.2</text>
+    <text x="179" y="651" font-family="Times New Roman" font-size="13" fill="#000000">0.3</text>
+    <text x="179" y="577" font-family="Times New Roman" font-size="13" fill="#000000">0.4</text>
+    <text x="179" y="502" font-family="Times New Roman" font-size="13" fill="#000000">0.5</text>
+    <text x="179" y="428" font-family="Times New Roman" font-size="13" fill="#000000">0.6</text>
+    <text x="179" y="354" font-family="Times New Roman" font-size="13" fill="#000000">0.7</text>
+    <text x="179" y="279" font-family="Times New Roman" font-size="13" fill="#000000">0.8</text>
+    <text x="179" y="205" font-family="Times New Roman" font-size="13" fill="#000000">0.9</text>
+    <text x="188" y="130" font-family="Times New Roman" font-size="13" fill="#000000">1</text>
+    <text x="179" y="56" font-family="Times New Roman" font-size="13" fill="#000000">1.1</text>
+    <text x="1745" y="859" font-family="Times New Roman" font-size="16" font-weight="700" fill="#000000">x</text>
+    <text x="213" y="13" font-family="Times New Roman" font-size="16" font-weight="700" fill="#000000">y</text>
+    <line stroke="#0000ff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel" x1="0" y1="869" x2="1751" y2="869" />
+    <polygon stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#0000ff" points="1750.5,863.5 1755.5,868.5 1755.5,869.5 1750.5,874.5 " />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="50.5" y1="874.5" x2="50.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="101.5" y1="874.5" x2="101.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="151.5" y1="874.5" x2="151.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="251.5" y1="874.5" x2="251.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="302.5" y1="874.5" x2="302.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="352.5" y1="874.5" x2="352.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="402.5" y1="874.5" x2="402.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="452.5" y1="874.5" x2="452.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="503.5" y1="874.5" x2="503.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="553.5" y1="874.5" x2="553.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="603.5" y1="874.5" x2="603.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="653.5" y1="874.5" x2="653.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="704.5" y1="874.5" x2="704.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="754.5" y1="874.5" x2="754.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="804.5" y1="874.5" x2="804.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="855.5" y1="874.5" x2="855.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="905.5" y1="874.5" x2="905.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="955.5" y1="874.5" x2="955.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1005.5" y1="874.5" x2="1005.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1056.5" y1="874.5" x2="1056.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1106.5" y1="874.5" x2="1106.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1156.5" y1="874.5" x2="1156.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1206.5" y1="874.5" x2="1206.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1257.5" y1="874.5" x2="1257.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1307.5" y1="874.5" x2="1307.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1357.5" y1="874.5" x2="1357.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1407.5" y1="874.5" x2="1407.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1458.5" y1="874.5" x2="1458.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1508.5" y1="874.5" x2="1508.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1558.5" y1="874.5" x2="1558.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1609.5" y1="874.5" x2="1609.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1659.5" y1="874.5" x2="1659.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1709.5" y1="874.5" x2="1709.5" y2="863.5" />
+    <line stroke="#0000ff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel" x1="201" y1="3" x2="201" y2="942" />
+    <polygon stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#0000ff" points="195.5,5.5 200.5,0.5 201.5,0.5 206.5,5.5 " />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="794.5" x2="206.5" y2="794.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="720.5" x2="206.5" y2="720.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="645.5" x2="206.5" y2="645.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="571.5" x2="206.5" y2="571.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="496.5" x2="206.5" y2="496.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="422.5" x2="206.5" y2="422.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="348.5" x2="206.5" y2="348.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="273.5" x2="206.5" y2="273.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="199.5" x2="206.5" y2="199.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="124.5" x2="206.5" y2="124.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="50.5" x2="206.5" y2="50.5" />
+  </g>
+  <clipPath id="clippath2">
+    <path d="M-1,-1 H1756 V942H-1 z M1705,-1 H1757 V31 H1705 z" clip-rule="evenodd" />
+  </clipPath>
+  <g clip-path="url(#clippath2)">
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="201" cy="867" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="302" cy="856" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="402" cy="821" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="503" cy="763" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="603" cy="710" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="704" cy="700" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="804" cy="737" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="905" cy="793" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1005" cy="837" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1106" cy="859" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1206" cy="867" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1307" cy="868" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1407" cy="869" r="5" />
+  </g>
+</svg>

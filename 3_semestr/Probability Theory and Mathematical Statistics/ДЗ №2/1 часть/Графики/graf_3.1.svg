@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1756px" height="943px" viewBox="0 0 1756 943" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <polyline stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" points="1711,20 1751,20 " />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1731" cy="20" r="5" />
+    <text x="1711" y="16" font-family="Times New Roman" font-size="11" fill="#000000">Ряд 1</text>
+    <rect stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" x="1706.5" y="0.5" width="49" height="29" />
+  </g>
+  <clipPath id="clippath1">
+    <path d="M-1,-1 H1756 V942H-1 z M1705,-1 H1757 V31 H1705 z" clip-rule="evenodd" />
+  </clipPath>
+  <g clip-path="url(#clippath1)">
+    <text x="60" y="874" font-family="Times New Roman" font-size="13" fill="#000000">-1</text>
+    <text x="192" y="874" font-family="Times New Roman" font-size="13" fill="#000000">1</text>
+    <text x="257" y="874" font-family="Times New Roman" font-size="13" fill="#000000">2</text>
+    <text x="322" y="874" font-family="Times New Roman" font-size="13" fill="#000000">3</text>
+    <text x="387" y="874" font-family="Times New Roman" font-size="13" fill="#000000">4</text>
+    <text x="452" y="874" font-family="Times New Roman" font-size="13" fill="#000000">5</text>
+    <text x="517" y="874" font-family="Times New Roman" font-size="13" fill="#000000">6</text>
+    <text x="582" y="874" font-family="Times New Roman" font-size="13" fill="#000000">7</text>
+    <text x="647" y="874" font-family="Times New Roman" font-size="13" fill="#000000">8</text>
+    <text x="712" y="874" font-family="Times New Roman" font-size="13" fill="#000000">9</text>
+    <text x="774" y="874" font-family="Times New Roman" font-size="13" fill="#000000">10</text>
+    <text x="839" y="874" font-family="Times New Roman" font-size="13" fill="#000000">11</text>
+    <text x="905" y="874" font-family="Times New Roman" font-size="13" fill="#000000">12</text>
+    <text x="970" y="874" font-family="Times New Roman" font-size="13" fill="#000000">13</text>
+    <text x="1035" y="874" font-family="Times New Roman" font-size="13" fill="#000000">14</text>
+    <text x="1100" y="874" font-family="Times New Roman" font-size="13" fill="#000000">15</text>
+    <text x="1165" y="874" font-family="Times New Roman" font-size="13" fill="#000000">16</text>
+    <text x="1230" y="874" font-family="Times New Roman" font-size="13" fill="#000000">17</text>
+    <text x="1295" y="874" font-family="Times New Roman" font-size="13" fill="#000000">18</text>
+    <text x="1360" y="874" font-family="Times New Roman" font-size="13" fill="#000000">19</text>
+    <text x="1425" y="874" font-family="Times New Roman" font-size="13" fill="#000000">20</text>
+    <text x="1490" y="874" font-family="Times New Roman" font-size="13" fill="#000000">21</text>
+    <text x="1555" y="874" font-family="Times New Roman" font-size="13" fill="#000000">22</text>
+    <text x="1620" y="874" font-family="Times New Roman" font-size="13" fill="#000000">23</text>
+    <text x="1685" y="874" font-family="Times New Roman" font-size="13" fill="#000000">24</text>
+    <text x="98" y="906" font-family="Times New Roman" font-size="13" fill="#000000">-0.05</text>
+    <text x="102" y="820" font-family="Times New Roman" font-size="13" fill="#000000">0.05</text>
+    <text x="108" y="778" font-family="Times New Roman" font-size="13" fill="#000000">0.1</text>
+    <text x="102" y="735" font-family="Times New Roman" font-size="13" fill="#000000">0.15</text>
+    <text x="108" y="692" font-family="Times New Roman" font-size="13" fill="#000000">0.2</text>
+    <text x="102" y="649" font-family="Times New Roman" font-size="13" fill="#000000">0.25</text>
+    <text x="108" y="606" font-family="Times New Roman" font-size="13" fill="#000000">0.3</text>
+    <text x="102" y="563" font-family="Times New Roman" font-size="13" fill="#000000">0.35</text>
+    <text x="108" y="520" font-family="Times New Roman" font-size="13" fill="#000000">0.4</text>
+    <text x="102" y="478" font-family="Times New Roman" font-size="13" fill="#000000">0.45</text>
+    <text x="108" y="435" font-family="Times New Roman" font-size="13" fill="#000000">0.5</text>
+    <text x="102" y="392" font-family="Times New Roman" font-size="13" fill="#000000">0.55</text>
+    <text x="108" y="349" font-family="Times New Roman" font-size="13" fill="#000000">0.6</text>
+    <text x="102" y="306" font-family="Times New Roman" font-size="13" fill="#000000">0.65</text>
+    <text x="108" y="263" font-family="Times New Roman" font-size="13" fill="#000000">0.7</text>
+    <text x="102" y="220" font-family="Times New Roman" font-size="13" fill="#000000">0.75</text>
+    <text x="108" y="177" font-family="Times New Roman" font-size="13" fill="#000000">0.8</text>
+    <text x="102" y="135" font-family="Times New Roman" font-size="13" fill="#000000">0.85</text>
+    <text x="108" y="92" font-family="Times New Roman" font-size="13" fill="#000000">0.9</text>
+    <text x="102" y="49" font-family="Times New Roman" font-size="13" fill="#000000">0.95</text>
+    <text x="1745" y="847" font-family="Times New Roman" font-size="16" font-weight="700" fill="#000000">x</text>
+    <text x="142" y="13" font-family="Times New Roman" font-size="16" font-weight="700" fill="#000000">P</text>
+    <line stroke="#0000ff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel" x1="0" y1="857" x2="1751" y2="857" />
+    <polygon stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#0000ff" points="1750.5,851.5 1755.5,856.5 1755.5,857.5 1750.5,862.5 " />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="65.5" y1="862.5" x2="65.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="195.5" y1="862.5" x2="195.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="260.5" y1="862.5" x2="260.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="325.5" y1="862.5" x2="325.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="390.5" y1="862.5" x2="390.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="455.5" y1="862.5" x2="455.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="520.5" y1="862.5" x2="520.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="585.5" y1="862.5" x2="585.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="650.5" y1="862.5" x2="650.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="715.5" y1="862.5" x2="715.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="780.5" y1="862.5" x2="780.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="845.5" y1="862.5" x2="845.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="911.5" y1="862.5" x2="911.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="976.5" y1="862.5" x2="976.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1041.5" y1="862.5" x2="1041.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1106.5" y1="862.5" x2="1106.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1171.5" y1="862.5" x2="1171.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1236.5" y1="862.5" x2="1236.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1301.5" y1="862.5" x2="1301.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1366.5" y1="862.5" x2="1366.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1431.5" y1="862.5" x2="1431.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1496.5" y1="862.5" x2="1496.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1561.5" y1="862.5" x2="1561.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1626.5" y1="862.5" x2="1626.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="1691.5" y1="862.5" x2="1691.5" y2="851.5" />
+    <line stroke="#0000ff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel" x1="130" y1="3" x2="130" y2="942" />
+    <polygon stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#0000ff" points="124.5,5.5 129.5,0.5 130.5,0.5 135.5,5.5 " />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="900.5" x2="135.5" y2="900.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="814.5" x2="135.5" y2="814.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="772.5" x2="135.5" y2="772.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="729.5" x2="135.5" y2="729.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="686.5" x2="135.5" y2="686.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="643.5" x2="135.5" y2="643.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="600.5" x2="135.5" y2="600.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="557.5" x2="135.5" y2="557.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="514.5" x2="135.5" y2="514.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="471.5" x2="135.5" y2="471.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="429.5" x2="135.5" y2="429.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="386.5" x2="135.5" y2="386.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="343.5" x2="135.5" y2="343.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="300.5" x2="135.5" y2="300.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="257.5" x2="135.5" y2="257.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="214.5" x2="135.5" y2="214.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="171.5" x2="135.5" y2="171.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="129.5" x2="135.5" y2="129.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="86.5" x2="135.5" y2="86.5" />
+    <line stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" x1="124.5" y1="43.5" x2="135.5" y2="43.5" />
+  </g>
+  <clipPath id="clippath2">
+    <path d="M-1,-1 H1756 V942H-1 z M1705,-1 H1757 V31 H1705 z" clip-rule="evenodd" />
+  </clipPath>
+  <g clip-path="url(#clippath2)">
+    <polyline stroke="#0000ff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="none" points="520,857 521,857 522,857 523,857 524,857 525,857 526,857 527,857 528,857 529,857 530,857 531,857 532,857 533,857 534,857 535,857 536,857 537,857 538,857 539,857 540,857 541,857 542,857 543,857 544,857 545,857 546,857 547,857 548,857 549,857 550,857 551,857 552,857 553,857 554,857 555,857 556,857 557,857 558,857 559,857 560,857 561,857 562,857 563,857 564,857 565,857 566,857 567,857 568,857 569,857 570,857 571,857 572,857 573,857 574,857 575,857 576,857 577,857 578,857 579,857 580,857 581,857 582,857 583,857 584,857 585,857 586,857 587,857 588,857 589,857 590,857 591,857 592,857 593,857 594,857 595,857 596,857 597,857 598,857 599,857 600,857 601,857 602,857 603,857 604,857 605,857 606,857 607,857 608,857 609,857 610,857 611,857 612,857 613,857 614,857 615,857 616,857 617,857 618,857 619,857 620,857 621,857 622,857 623,857 624,857 625,857 626,857 627,857 628,857 629,857 630,857 631,857 632,857 633,857 634,857 635,857 636,857 637,857 638,857 639,857 640,857 641,857 642,857 643,857 644,857 645,857 646,857 647,857 648,857 649,857 650,857 651,857 652,857 653,857 654,857 655,857 656,857 657,857 658,857 659,857 660,857 661,857 662,857 663,857 664,857 665,857 666,857 667,857 668,857 669,857 670,857 671,857 672,857 673,857 674,857 675,857 676,857 677,857 678,857 679,857 680,857 681,857 682,857 683,857 684,857 685,857 686,857 687,857 688,857 689,857 690,857 691,857 692,857 693,857 694,857 695,857 696,857 697,857 698,857 699,857 700,857 701,857 702,857 703,857 704,857 705,857 706,857 707,857 708,857 709,857 710,857 711,857 712,857 713,857 714,857 715,857 716,857 717,857 718,857 719,857 720,857 721,857 722,857 723,857 724,857 725,857 726,857 727,857 728,857 729,857 730,857 731,857 732,857 733,857 734,857 735,857 736,857 737,857 738,857 739,857 740,857 741,857 742,857 743,857 744,857 745,857 746,857 747,857 748,857 749,857 750,857 751,856 752,856 753,856 754,856 755,856 756,856 757,856 758,856 759,856 760,856 761,856 762,856 763,856 764,856 765,856 766,856 767,856 768,856 769,856 770,856 771,856 772,856 773,856 774,856 775,856 776,856 777,856 778,856 779,856 780,856 781,856 782,856 783,856 784,856 785,856 786,856 787,856 788,856 789,856 790,856 791,856 792,856 793,856 794,856 795,856 796,856 797,856 798,856 799,856 800,856 801,856 802,856 803,856 804,856 805,856 806,856 807,856 808,856 809,856 810,856 811,856 812,856 813,856 814,856 815,856 816,856 817,856 818,855 819,855 820,855 821,855 822,855 823,855 824,855 825,855 826,855 827,855 828,855 829,855 830,855 831,855 832,855 833,855 834,855 835,855 836,855 837,855 838,855 839,855 840,855 841,855 842,855 843,855 844,855 845,855 846,855 847,855 848,855 849,855 850,855 851,855 852,855 853,855 854,855 855,855 856,855 857,855 858,855 859,855 860,855 861,855 862,855 863,855 864,854 865,854 866,854 867,854 868,854 869,854 870,854 871,854 872,854 873,854 874,854 875,854 876,854 877,854 878,854 879,854 880,854 881,854 882,854 883,854 884,854 885,854 886,854 887,854 888,854 889,854 890,854 891,854 892,854 893,854 894,854 895,853 896,853 897,853 898,853 899,853 900,853 901,853 902,853 903,853 904,853 905,853 906,853 907,853 908,853 909,853 910,853 911,853 912,853 913,853 914,853 915,853 916,853 917,853 918,853 919,853 920,853 921,853 922,853 923,853 924,853 925,853 926,853 927,853 928,853 929,853 930,853 931,853 932,852 933,852 934,852 935,852 936,852 937,852 938,852 939,852 940,852 941,852 942,852 943,852 944,852 945,852 946,852 947,852 948,852 949,852 950,852 951,852 952,852 953,852 954,852 955,852 956,852 957,852 958,852 959,852 960,852 961,852 962,852 963,852 964,852 965,852 966,851 967,851 968,851 969,851 970,851 971,851 972,851 973,851 974,851 975,851 976,851 977,851 978,851 979,851 980,851 981,851 982,851 983,851 984,851 985,850 986,850 987,850 988,850 989,850 990,850 991,850 992,850 993,850 994,850 995,850 996,850 997,850 998,850 999,850 1000,849 1001,849 1002,849 1003,849 1004,849 1005,849 1006,849 1007,849 1008,849 1009,849 1010,849 1011,849 1012,849 1013,848 1014,848 1015,848 1016,848 1017,848 1018,848 1019,848 1020,848 1021,848 1022,848 1023,848 1024,847 1025,847 1026,847 1027,847 1028,847 1029,847 1030,847 1031,847 1032,847 1033,847 1034,847 1035,847 1036,846 1037,846 1038,846 1039,846 1040,846 1041,846 1042,846 1043,846 1044,846 1045,846 1046,846 1047,845 1048,845 1049,845 1050,845 1051,845 1052,845 1053,845 1054,845 1055,845 1056,845 1057,845 1058,844 1059,844 1060,844 1061,844 1062,844 1063,844 1064,844 1065,844 1066,844 1067,844 1068,844 1069,844 1070,843 1071,843 1072,843 1073,843 1074,843 1075,843 1076,843 1077,843 1078,843 1079,843 1080,843 1081,842 1082,842 1083,842 1084,842 1085,842 1086,842 1087,842 1088,842 1089,842 1090,842 1091,841 1092,841 1093,841 1094,841 1095,841 1096,841 1097,841 1098,841 1099,841 1100,841 1101,840 1102,840 1103,840 1104,840 1105,840 1106,840 1107,840 1108,840 1109,840 1110,840 1111,839 1112,839 1113,839 1114,839 1115,839 1116,839 1117,839 1118,839 1119,839 1120,839 1121,838 1122,838 1123,838 1124,838 1125,838 1126,838 1127,838 1128,838 1129,838 1130,837 1131,837 1132,837 1133,837 1134,837 1135,837 1136,837 1137,837 1138,836 1139,836 1140,836 1141,836 1142,836 1143,836 1144,836 1145,836 1146,835 1147,835 1148,835 1149,835 1150,835 1151,835 1152,835 1153,835 1154,834 1155,834 1156,834 1157,834 1158,834 1159,834 1160,834 1161,833 1162,833 1163,833 1164,833 1165,833 1166,833 1167,833 1168,832 1169,832 1170,832 1171,832 1172,832 1173,832 1174,832 1175,831 1176,831 1177,831 1178,831 1179,831 1180,831 1181,830 1182,830 1183,830 1184,830 1185,830 1186,830 1187,829 1188,829 1189,829 1190,829 1191,829 1192,829 1193,828 1194,828 1195,828 1196,828 1197,828 1198,827 1199,827 1200,827 1201,827 1202,827 1203,827 1204,826 1205,826 1206,826 1207,826 1208,826 1209,825 1210,825 1211,825 1212,825 1213,825 1214,824 1215,824 1216,824 1217,824 1218,824 1219,823 1220,823 1221,823 1222,823 1223,823 1224,822 1225,822 1226,822 1227,822 1228,822 1229,821 1230,821 1231,821 1232,821 1233,821 1234,820 1235,820 1236,820 1237,820 1238,820 1239,819 1240,819 1241,819 1242,819 1243,819 1244,818 1245,818 1246,818 1247,818 1248,817 1249,817 1250,817 1251,817 1252,817 1253,816 1254,816 1255,816 1256,816 1257,816 1258,815 1259,815 1260,815 1261,815 1262,814 1263,814 1264,814 1265,814 1266,814 1267,813 1268,813 1269,813 1270,813 1271,812 1272,812 1273,812 1274,812 1275,811 1276,811 1277,811 1278,811 1279,811 1280,810 1281,810 1282,810 1283,810 1284,809 1285,809 1286,809 1287,809 1288,808 1289,808 1290,808 1291,808 1292,807 1293,807 1294,807 1295,807 1296,806 1297,806 1298,806 1299,806 1300,805 1301,805 1302,805 1303,804 1304,804 1305,804 1306,804 1307,803 1308,803 1309,803 1310,803 1311,802 1312,802 1313,802 1314,801 1315,801 1316,801 1317,801 1318,800 1319,800 1320,800 1321,799 1322,799 1323,799 1324,799 1325,798 1326,798 1327,798 1328,797 1329,797 1330,797 1331,796 1332,796 1333,796 1334,796 1335,795 1336,795 1337,795 1338,794 1339,794 1340,794 1341,793 1342,793 1343,793 1344,792 1345,792 1346,792 1347,791 1348,791 1349,791 1350,790 1351,790 1352,790 1353,789 1354,789 1355,789 1356,788 1357,788 1358,788 1359,787 1360,787 1361,787 1362,786 1363,786 1364,786 1365,785 1366,785 1367,785 1368,784 1369,784 1370,784 1371,783 1372,783 1373,782 1374,782 1375,782 1376,781 1377,781 1378,781 1379,780 1380,780 1381,780 1382,779 1383,779 1384,778 1385,778 1386,778 1387,777 1388,777 1389,777 1390,776 1391,776 1392,775 1393,775 1394,775 1395,774 1396,774 1397,773 1398,773 1399,773 1400,772 1401,772 1402,771 1403,771 1404,771 1405,770 1406,770 1407,769 1408,769 1409,769 1410,768 1411,768 1412,767 1413,767 1414,766 1415,766 1416,766 1417,765 1418,765 1419,764 1420,764 1421,763 1422,763 1423,763 1424,762 1425,762 1426,761 1427,761 1428,760 1429,760 1430,759 1431,759 1432,759 1433,758 1434,758 1435,757 1436,757 1437,756 1438,756 1439,755 1440,755 1441,754 1442,754 1443,753 1444,753 1445,753 1446,752 1447,752 1448,751 1449,751 1450,750 1451,750 1452,749 1453,749 1454,748 1455,748 1456,747 1457,747 1458,746 1459,746 1460,745 1461,745 1462,744 1463,744 1464,743 1465,743 1466,742 1467,742 1468,741 1469,741 1470,740 1471,740 1472,739 1473,739 1474,738 1475,738 1476,737 1477,736 1478,736 1479,735 1480,735 1481,734 1482,734 1483,733 1484,733 1485,732 1486,732 1487,731 1488,731 1489,730 1490,729 1491,729 1492,728 1493,728 1494,727 1495,727 1496,726 1497,725 1498,725 1499,724 1500,724 1501,723 1502,723 1503,722 1504,721 1505,721 1506,720 1507,720 1508,719 1509,718 1510,718 1511,717 1512,717 1513,716 1514,715 1515,715 1516,714 1517,713 1518,713 1519,712 1520,712 1521,711 1522,710 1523,710 1524,709 1525,708 1526,708 1527,707 1528,707 1529,706 1530,705 1531,705 1532,704 1533,703 1534,703 1535,702 1536,701 1537,701 1538,700 1539,699 1540,699 1541,698 1542,697 1543,697 1544,696 1545,695 1546,695 1547,694 1548,693 1549,692 1550,692 1551,691 1552,690 1553,690 1554,689 1555,688 1556,688 1557,687 1558,686 1559,685 1560,685 1561,684 1562,683 1563,683 1564,682 1565,681 1566,680 1567,680 1568,679 1569,678 1570,677 1571,677 1572,676 1573,675 1574,674 1575,674 1576,673 1577,672 1578,671 1579,671 1580,670 1581,669 1582,668 1583,668 1584,667 1585,666 1586,665 1587,665 1588,664 1589,663 1590,662 1591,662 1592,661 1593,660 1594,659 1595,658 1596,658 1597,657 1598,656 1599,655 1600,655 1601,654 1602,653 1603,652 1604,651 1605,651 1606,650 1607,649 1608,648 1609,647 1610,647 1611,646 1612,645 1613,644 1614,644 1615,643 1616,642 1617,641 1618,640 1619,640 1620,639 1621,638 1622,637 1623,636 1624,636 1625,635 1626,634 " />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="520" cy="857" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="585" cy="857" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="650" cy="857" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="715" cy="857" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="780" cy="856" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="845" cy="855" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="911" cy="853" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="976" cy="851" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1041" cy="846" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1106" cy="840" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1171" cy="832" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1236" cy="820" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1301" cy="805" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1366" cy="785" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1431" cy="759" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1496" cy="726" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1561" cy="684" r="5" />
+    <circle stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#ff0000" cx="1626" cy="634" r="5" />
+  </g>
+</svg>
