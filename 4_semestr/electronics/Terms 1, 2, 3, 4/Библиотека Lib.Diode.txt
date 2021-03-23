@@ -1,0 +1,617 @@
+
+* Variant 01
+.model D2D212A  D(Is=10.09p Rs=.11 Ikf=.2752 N=1 Xti=3 Eg=1.11 Cjo=193.2p
++               M=.3801 Vj=.75 Fc=.5 Isr=5.975u Nr=2 Bv=250.3 Ibv=.1P
++               Tt=432.8n)
+* Variant 02
+.model D2d2997a D(Is=292.9p Rs=3.244m Ikf=.6194 N=1 Xti=3 Eg=1.11 Cjo=3.283n
++               M=.4371 Vj=.75 Fc=.5 Isr=17.38u Nr=2 Bv=200.1 Ibv=12.93m
++               Tt=100.1n)
+* Variant 03
+.model D2d2997v D(Is=292.9p Rs=3.244m Ikf=.6194 N=1 Xti=3 Eg=1.11 Cjo=3.283n
++               M=.4371 Vj=.75 Fc=.5 Isr=17.38u Nr=2 Bv=50.1 Ibv=12.93m
++               Tt=100.1n)
+* Variant 04
+.model D2d2998a D(Is=2.978u Rs=2.654m Ikf=14.37 N=1 Xti=3 Eg=1.11 Cjo=2.789n
++               M=.3852 Vj=.75 Fc=.5 Isr=6.189m Nr=2 Bv=14.93 Ibv=1.293m
++               Tt=100.1n)
+* Variant 05
+.model D2d2998b D(Is=2.978u Rs=2.654m Ikf=14.37 N=1 Xti=3 Eg=1.11 Cjo=2.789n
++               M=.3852 Vj=.75 Fc=.5 Isr=6.189m Nr=2 Bv=24.93 Ibv=1.293m
++               Tt=100.1n)
+* Variant 06
+.model D2d2997b D(Is=292.9p Rs=3.244m Ikf=.6194 N=1 Xti=3 Eg=1.11 Cjo=3.283n
++               M=.4371 Vj=.75 Fc=.5 Isr=17.38u Nr=2 Bv=300.1 Ibv=12.93m
++               Tt=100.1n)
+* Variant 07
+.model D2d231a  D(Is=304f Rs=4.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=150.2 Ibv=.5173
++               Tt=24.58n)
+* Variant 08
+.model D2d231b  D(Is=504f Rs=4.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=200.2 Ibv=.5173
++               Tt=24.58n)
+* Variant 09
+.model D2d251a  D(Is=304f Rs=4.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=50.2 Ibv=.5173
++               Tt=24.58n)
+* Variant 10
+.model D2d251b  D(Is=504f Rs=4.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=70.2 Ibv=.5173
++               Tt=24.58n)
+* Variant 11
+.model D2d251v  D(Is=704f Rs=4.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=100.2 Ibv=.5173
++               Tt=24.58n)
+* Variant 12
+.model D2d906a  D(Is=4.54p Rs=1.976 Ikf=490.8u N=1 Xti=.1 Eg=1.11 Cjo=39.43p
++               M=.3333 Vj=.75 Fc=.5 Isr=429.5n Nr=2 Bv=80.25 Ibv=646.6u
++               Tt=577.1n)
+* Variant 13
+.model D2d510a  D(Is=48.25p Rs=.4715 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=4p M=.3333
++               Vj=.75 Fc=.5 Isr=1.227u Nr=2 Bv=50.22 Ibv=517.3u Tt=2.232n)
+* Variant 14
+.model D2D522A  D(Is=58.25p Rs=.5715 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=2.658p M=.154 Vj=.75
++               Fc=.5 Isr=2.612u Nr=2 Bv=50.19 Ibv=258.6u Tt=2.232n)
+* Variant 15
+.model D2D522B  D(Is=24.65n Rs=64.48m Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=38.32p
++               M=.3522 Vj=.75 Fc=.5 Isr=226.6u Nr=2 Bv=49.74 Ibv=51.73n
++               Tt=721.3u) 
+* Variant 16
+.model D2d202d  D(Is=24.65n Rs=64.48m Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=38.32p
++               M=.3522 Vj=.75 Fc=.5 Isr=226.6u Nr=2 Bv=199.74 Ibv=51.73n
++               Tt=721.3u)
+* Variant 17
+.model D2d202k  D(Is=24.65n Rs=54.48m Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=38.32p
++               M=.3522 Vj=.75 Fc=.5 Isr=226.6u Nr=2 Bv=399.74 Ibv=51.73n
++               Tt=721.3u)
+* Variant 18
+.model D2d202m  D(Is=24.65n Rs=44.48m Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=38.32p
++               M=.3522 Vj=.75 Fc=.5 Isr=226.6u Nr=2 Bv=499.74 Ibv=51.73n
++               Tt=721.3u)
+* Variant 19
+.model D2d202c  D(Is=24.65n Rs=34.48m Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=38.32p
++               M=.3522 Vj=.75 Fc=.5 Isr=226.6u Nr=2 Bv=599.74 Ibv=51.73n
++               Tt=721.3u)
+* Variant 20
+.Model D816B   D(Is=.4279p N=1.14 Rs=2.8 Cjo=133.2p Tt=220.4 
++                M=0.41 Vj=0.73 Fc=0.5 Bv=27 IBv=10u Eg=1.11 Xti=3)
+* Variant 21
+.Model D816G   D(Is=3.337p N=1.23 Rs=4.6 Cjo=103.5p Tt=203.5n 
++                M=0.39 Vj=0.71 Fc=0.5 Bv=39 IBv=15u Eg=1.11 Xti=3)
+* Variant 22
+.Model D816D   D(Is=1.471p N=1.18 Rs=5.6 Cjo=82.24p Tt=207.4n 
++                M=0.40 Vj=0.70 Fc=0.5 Bv=47 IBv=15u Eg=1.11 Xti=3)
+* Variant 23
+.Model D817A   D(Is=10.10p N=1.47 Rs=12 Cjo=57.00p Tt=500.0n  
++                M=0.34 Vj=0.80 Fc=0.5 Bv=56 IBv=20u Eg=1.11 Xti=3)
+* Variant 24
+.Model D817B   D(Is=12.00p N=1.43 Rs=14 Cjo=68.00p Tt=500n  
++                M=0.35 Vj=0.8 Fc=0.5 Bv=68 IBv=20u Eg=1.11 Xti=3)
+* Variant 25
+.Model D817V   D(Is=12.22p N=1.28 Rs=16 Cjo=54.48p Tt=414.1n
++                M=0.43 Vj=0.78 Fc=0.5 Bv=82 IBv=30u Eg=1.11 Xti=3)
+* Variant 26
+.Model D817G   D(Is=29.34p N=1.27 Rs=18 Cjo=82.0p Tt=500.0n 
++                M=0.38 Vj=0.8 Fc=0.5 Bv=100 IBv=50u Eg=1.11 Xti=3)
+  Variant 27
+.Model 2S191G  D(Is=47.47e-15 N=1.27 Rs=9 Cjo=10.69p Tt=4.337n  
++                M=0.39 Vj=0.79 Fc=0.5 Bv=9.1 IBv=1u Eg=1.11 
+
+* Variant 28
+.model D2d204a  D(Is=3.525p Rs=1.32 Ikf=.1402 N=1 Xti=3 Eg=1.11 Cjo=32.42p
++               M=.2894 Vj=.75 Fc=.5 Isr=24.36u Nr=2 Bv=399.8 Ibv=344.9n
++               Tt=2.164u)
+* Variant 29
+.model D2d204b  D(Is=3.525p Rs=1.32 Ikf=.1402 N=1 Xti=3 Eg=1.11 Cjo=32.42p
++               M=.2894 Vj=.75 Fc=.5 Isr=24.36u Nr=2 Bv=199.8 Ibv=344.9n
++               Tt=2.164u)
+* Variant 30
+.model D102     D(Is=3.525p Rs=1.32 Ikf=.1402 N=1 Xti=3 Eg=1.11 Cjo=32.42p
++               M=.2894 Vj=.75 Fc=.5 Isr=24.36u Nr=2 Bv=199.8 Ibv=344.9n
++               Tt=2.164u)
+* Variant 31
+.model D7L      D(Is=20E-9 Rs=0.08  N=2.19  Tt=1.4E-007  Cjo=5E-012
++                 Vj=0.75 M=0.33  Eg=0.67 Fc=0.5 Bv=60)
+* Variant 32
+*
+.Model KD102A   D(Is=21.66p N=1.28 Rs=1.79 Cjo=3.27p Tt=6.12e-9
++		        M=0.32 Vj=0.71 Fc=0.5 Bv=250 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 33
+.model KD102B  D(Is=910.8f Rs=6.325 N=1 Xti=3 Eg=1.11 Bv=300.2 Ibv=1.521m
++                 Cjo=3.27p Vj=.71 M=.32 Fc=.5 Tt=6.12e-9)
+* Variant 34
+.Model KD103A   D(Is=67.08p N=1.21 Rs=1.43 Cjo=8.58p Tt=4.15e-9
++		  M=0.31 Vj=0.72 Fc=0.5 Bv=75 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 35
+.Model KD104A   D(Is=5.812p N=1.15 Rs=8.1 Cjo=41.2p Tt=8.28e-9 
++		  M=0.33 Vj=0.71 Fc=0.5 Bv=300 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 36
+.Model KD105B   D(Is=84.26p N=1.11 Rs=0.12 Cjo=120p  Tt=1.08e-8 
++		  M=0.33 Vj=0.71 Fc=0.5 Bv=400 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 37
+.Model KD106A   D(Is=114.3p N=1.23 Rs=6.3e-2 Cjo=130p Tt=3.85e-8 
++		  M=0.33 Vj=0.71 Fc=0.5 Bv=100 IBv=1e-10 Eg=1.11 Xti=3)
+* Variant 38
+.Model KD202D   D(Is=84.012n Rs=47m N=1.56 Cjo=82p Tt=3.19e-7 
++		  M=0.38 Vj=0.75 Fc=0.5 Bv=200 IBv=10t-6 Eg=1.11 Xti=3)
+
+* Variant 39
+.model KD202K   D(Is=84.012n Rs=47m N=1.56 Xti=3 Eg=1.11 Bv=400 Ibv=10e-6
++                 Cjo=82p Vj=.75 M=.38 Fc=.5 Tt=3.12e-7)
+* Variant 40
+.Model D815D   D(Is=.5227e-10 N=1.46 Rs=0.7 Cjo=73.31p Tt=217.3n 
++                M=0.39 Vj=0.74 Fc=0.5 Bv=12 IBv=5u Eg=1.11 Xti=3)
+* Variant 41
+.Model D815E   D(Is=.4646e-10 N=1.39 Rs=0.9 Cjo=72.86p Tt=118.9n 
++                M=0.39 Vj=0.78 Fc=0.5 Bv=15 IBv=5u Eg=1.11 Xti=3)
+* Variant 42
+.Model D815J   D(Is=.1996e-10 N=1.32 Rs=1.1 Cjo=82.14p Tt=222.9n 
++               M=0.42 Vj=0.75 Fc=0.5 Bv=18 IBv=5u Eg=1.11 Xti=3)
+* Variant 43
+.Model D816A   D(Is=.4599e-11 N=1.25 Rs=2.4 Cjo=105.9p Tt=213.6n 
++                M=0.41 Vj=0.71 Fc=0.5 Bv=22 IBv=10u Eg=1.11 Xti=3)
+
+* Variant 44
+.Model KD203A   D(Is=2.98n N=1.52 Rs=9.3e-3 Cjo=21.2p Tt=9.09e-7 
++		  M=0.28 Vj=0.73 Fc=0.5 Bv=600 IBv=1e-10 Eg=1.11 Xti=3)
+* Variant 45
+.model KD203B   D(Is=303.3f Rs=30.57m N=1 Xti=3 Eg=1.11 Bv=799.9 Ibv=7.607u
++                 Cjo=21.2p Vj=.73 M=.28 Fc=.5 Tt=9.09e-7)
+* Variant 46
+.model KD203V   D(Is=268.8f Rs=14.95m N=1 Xti=3 Eg=1.11 Bv=799.9 Ibv=7.607u
++                 Cjo=21.2p Vj=.73 M=.28 Fc=.5 Tt=9.09e-7)
+* Variant 47
+.model KD203G   D(Is=303.3f Rs=20.57m N=1 Xti=3 Eg=1.11 Bv=999.9 Ibv=7.607u
++                 Cjo=21.2p Vj=.73 M=.28 Fc=.5 Tt=9.09e-7)
+* Variant 48
+.model KD203D   D(Is=268.8f Rs=14.95m N=1 Xti=3 Eg=1.11 Bv=999.9 Ibv=7.607u
++                 Cjo=21.2p Vj=.73 M=.28 Fc=.5 Tt=9.09e-7)
+* Variant 49
+.Model KD204A   D(Is=4.110n N=1.52 Rs=7.5e-2 Cjo=31.5p Tt=1.16e-7 
++		  M=0.35 Vj=0.68 Fc=0.5 Bv=400 IBv=1e-10 Eg=1.11 Xti=3)
+* Variant 50
+.model KD204B   D(Is=6.335f Rs=64.96m N=1 Xti=3 Eg=1.11 Bv=200.1 Ibv=161.7u
++                 Cjo=35p Vj=.75 M=.3333 Fc=.5 Tt=1.16e-7)
+* Variant 51
+.model KD204V   D(Is=5.849f Rs=23.7m N=1 Xti=3 Eg=1.11 Bv=50.12 Ibv=517.3u
++                 Cjo=35p Vj=.75 M=.3333 Fc=.5 Tt=1.16e-7)
+* Variant 52
+.Model KD208A   D(Is=181p N=1.31 Rs=0.12 Cjo=96.3p Tt=2.23e-7 
++		  M=0.38 Vj=0.68 Fc=0.5 Bv=100 IBv=1e-10 Eg=1.11 Xti=3)
+* Variant 53
+.Model KD209A   D(Is=62.2p N=1.23 Rs=0.17 Cjo=16.2p  Tt=7.21e-7 
++		  M=0.35 Vj=0.68 Fc=0.5 Bv=600 IBv=1e-10 Eg=1.11 Xti=3)
+* Variant 54
+.Model KD212A   D(Is=1.26p N=1.1 Rs=0.11 Cjo=140.7p Tt=1.27e-8 
++		  M=0.26 Vj=0.73 Fc=0.5 Bv=200 IBv=1e-10 Eg=1.11 Xti=3)
+* Variant 55
+.model KD212B   D(Is=8.272p Rs=.107 N=1 Xti=3 Eg=1.11 Bv=100.2 Ibv=783.8u
++                 Cjo=150p Vj=.75 M=.25 Fc=.5 Tt=360.7n)
+* Variant 56
+.Model KD213A   D(Is=57.90p N=1.12 Rs=17m Cjo=275.1p Tt=224n 
++		  M=0.321 Vj=0.72 Fc=0.5 Bv=200 IBv=1e-10 Eg=1.11 Xti=3)
+* Variant 57
+.model KD213B   D(Is=124.72p Rs=25.34m N=1 Xti=3 Eg=1.11 Bv=200.1 Ibv=258.6u
++                 Cjo=249.6p Vj=.75 M=.33 Fc=.5 Tt=173.1n)
+* Variant 58
+.model KD213V   D(Is=20.83p Rs=19.59m N=1 Xti=3 Eg=1.11 Bv=100.1 Ibv=258.6u
++                 Cjo=2.496n Vj=.75 M=.3333 Fc=.5 Tt=252.5n)
+* Variant 59
+.model KD213G   D(Is=64.72p Rs=28.34m N=1 Xti=3 Eg=1.11 Bv=200.1 Ibv=258.6u
++                 Cjo=2.496n Vj=.75 M=.3333 Fc=.5 Tt=173.1n)
+* Variant 60
+.Model KD219A   D(Is=57.60n N=1.12 Rs=3m Cjo=63.1p  Tt=1.23n 
++		  M=0.33 Vj=0.54 Fc=0.5 Bv=15 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 61
+.Model KD220A   D(Is=11.20n N=1.25 Rs=7.1e-2 Cjo=164.5p Tt=1.23e-9 
++		  M=0.33 Vj=0.65 Fc=0.5 Bv=400 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 62
+.Model KD503A   D(Is=7.920e-13 N=1.11 Rs=2.3 Cjo=1.45p  Tt=2.19e-9 
++		  M=0.27 Vj=0.71 Fc=0.5 Bv=30 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 63
+.Model KD509A   D(Is=1.14p N=1.12 Rs=2.1 Cjo=2.15p  Tt=3.25e-9 
++		  M=0.33 Vj=0.71 Fc=0.5 Bv=50  IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 64
+.model KD510A   D(Is=528.2f Rs=1.302 N=1 Xti=3 Eg=1.11 Bv=70.23 Ibv=3.233m
++                 Cjo=3p Vj=.75 M=.25 Fc=.5 Tt=1.443n)
+* Variant 65
+.Model KD512A   D(Is=2.120f N=1.0  Rs=9.2 Cjo=0.85p  Tt=.961e-9 
++		  M=0.25 Vj=0.69 Fc=0.5 Bv=15 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 66
+.Model KD513A   D(Is=568.0f N=1.11 Rs=1.6 Cjo=1.81p  Tt=.850e-9 
++		   M=0.31 Vj=0.69 Fc=0.5 Bv=50 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 67
+.Model KD520A   D(Is=618.0f N=1.12 Rs=6.3  Cjo=2.35p  Tt=1.44e-9 
++		  M=0.33 Vj=0.68 Fc=0.5 Bv=15 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 68
+.Model KD521A   D(Is=115f  N=1.0  Rs=3.21 Cjo=2.25p  Tt=3.12e-9 
++		  M=0.26 Vj=0.68 Fc=0.5 Bv=75 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 69
+.Model KD522A   D(Is=227f N=1.1  Rs=1.17 Cjo=1.83p  Tt=2.38e-9 
++		  M=0.25 Vj=0.68 Fc=0.5 Bv=50 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 70
+.model KD522B   D(Is=72.71f Rs=2.662 N=1 Xti=3 Eg=1.11 Bv=50.23 Ibv=862.1u
++                 Cjo=2.6p Vj=.75 M=.15 Fc=.5 Tt=1.443n)
+* Variant 71
+.model KD906A   D(Is=718.1f Rs=2.763 N=1 Xti=3 Eg=1.11 Bv=140.3 Ibv=1.847m
++                 Cjo=27.15p Vj=.75 M=.15 Fc=.5 Tt=179.8n)
+* Variant 72
+*
+.Model D237A    D(Is=31.69p N=1  Rs=91.07m Cjo=13p  Tt=721.3n 
++		  M=0.25 Vj=0.75 Fc=0.5 Bv=200 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 73
+.model D237B    D(Is=31.69p Rs=71.07m N=1 Xti=3 Eg=1.11 Bv=400.1 Ibv=158.5u
++                 Cjo=15p Vj=.75 M=.3333 Fc=.5 Tt=721.3n)
+* Variant 74
+.model D237V    D(Is=76.09p Rs=.4451 N=1 Xti=3 Eg=1.11 Bv=600.1 Ibv=158.5u
++                 Cjo=15p Vj=.75 M=.3333 Fc=.5 Tt=721.3n)
+* Variant 75
+.model D237E    D(Is=28.72p Rs=51.27m N=1 Xti=3 Eg=1.11 Bv=200.1 Ibv=158.5u
++                 Cjo=15p Vj=.75 M=.3333 Fc=.5 Tt=721.3n)
+* Variant 76
+.model D237J    D(Is=28.72p Rs=51.27m N=1 Xti=3 Eg=1.11 Bv=400.1 Ibv=158.5u
++                 Cjo=15p Vj=.75 M=.3333 Fc=.5 Tt=721.3n)
+* Variant 77
+.Model K2DC523A  D(Is=20.23f N=1.1 Rs=3.122 Cjo=1.564p Tt=271.3p  
++		  M=0.15 Vj=0.75 Fc=0.5 Bv=70 IBv=43.11m Eg=1.11 Xti=3)
+* Variant 78
+.model K2DC523B  D(Is=20.23f Rs=3.122 N=1 Xti=3 Eg=1.11 Bv=70.33 Ibv=43.11m
++                 Cjo=1.564p Vj=.75 M=.15 Fc=.5 Tt=721.3p)
+* Variant 79
+.Model K2DC627A  D(Is=660.2f N=1.1 Rs=2.239 Cjo=3.5p Tt=14.6n 
++		  M=0.25 Vj=0.75 Fc=0.5 Bv=60 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 80
+.Model KD219A   D(Is=57.60n N=1.12 Rs=3m Cjo=63.1p  Tt=1.23n 
++		  M=0.33 Vj=0.54 Fc=0.5 Bv=15 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 81
+.Model KD220A   D(Is=11.20n N=1.25 Rs=7.1e-2 Cjo=164.5p Tt=1.23e-9 
++		  M=0.33 Vj=0.65 Fc=0.5 Bv=400 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 82
+.Model KD503B   D(Is=9.920e-13 N=1.11 Rs=2.1 Cjo=1.45p  Tt=2.19e-9 
++		  M=0.27 Vj=0.71 Fc=0.5 Bv=30 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 83
+.Model KD509B   D(Is=2.14p N=1.12 Rs=2.3 Cjo=2.15p  Tt=3.25e-9 
++		  M=0.33 Vj=0.71 Fc=0.5 Bv=50  IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 84
+.model KD510B   D(Is=728.2f Rs=1.102 N=1 Xti=3 Eg=1.11 Bv=70.23 Ibv=3.233m
++                 Cjo=3p Vj=.75 M=.25 Fc=.5 Tt=1.443n)
+* Variant 85
+.model D2C133A  D(Is=11.47f Rs=0.2655 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.371 Ibv=47.97m Nbv=3)
+*         Ibvl=48.16m  
+*         Tbv1=-1.1m)
+* Variant 86
+.model D2C139A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.928 Ibv=43.84m 
+*         Nbv=60 Ibvl=3m Nbvl=180 
++         Tbv1=-1.0m)
+* Variant 87
+.model D2C147A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=4.73 Ibv=47.03m 
+*         Nbv=56 Ibvl=3m Nbvl=160 
++         Tbv1=-900u)
+* Variant 88
+.model D2C156A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=5.635 Ibv=57.48m 
+*         Nbv=46 Ibvl=3m Nbvl=160 
++         Tbv1=500u)
+* Variant 89
+.model D2C168A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=6.848 Ibv=95.79m 
+*         Nbv=28 Ibvl=3m Nbvl=120 
++         Tbv1=600u)
+* Variant 90
+.model D2C433A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.3 Ibv=60m 
+*         Nbv=14 Ibvl=3m Nbvl=180 
++         Tbv1=-1m)
+* Variant 91
+.model D2C439A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.9 Ibv=51m 
+*         Nbv=12 Ibvl=3m Nbvl=180 
++         Tbv1=-1m)
+* Variant 92
+.model D2C447A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=4.7 Ibv=43m 
+*         Nbv=10 Ibvl=3m Nbvl=180 
++         Tbv1=-800u)
+* Variant 93
+.model D2C456A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=5.6 Ibv=36m 
+*         Nbv=7 Ibvl=3m Nbvl=145 
++         Tbv1=500u)
+* Variant 94
+.model D2C468A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=6.8 Ibv=29m 
+*         Nbv=5 Ibvl=3m Nbvl=70 
++         Tbv1=650u)
+* Variant 95
+.model D2C482A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=8.2 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=800u)
+* Variant 96
+.model D2C510A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=10 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 97
+.model D2C512A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=12 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 98
+.model D2C515A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=15 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 99
+.model D2C518A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=18 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 100
+.model D2C522A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=22 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 101
+.model D2C524A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=24 Ibv=5m 
+*         Nbv=30 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 102
+.model D2C527A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=27 Ibv=5m 
+*         Nbv=40 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 103
+.model D2C530A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=30 Ibv=5m 
+*         Nbv=45 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 104
+.model D2C536A  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=36 Ibv=5m 
+*         Nbv=50 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 105
+.model D102B     D(Is=4.525p Rs=1.52 Ikf=.1402 N=1 Xti=3 Eg=1.11 Cjo=22.42p
++               M=.2894 Vj=.75 Fc=.5 Isr=24.36u Nr=2 Bv=199.8 Ibv=344.9n
++               Tt=2.164u)
+* Variant 106
+.model D7G      D(Is=30E-9 Rs=0.08  N=2.19  Tt=1.8E-007  Cjo=6E-012
++                 Vj=0.75 M=0.33  Eg=0.67 Fc=0.5 Bv=90)
+* Variant 107
+*
+.Model KD102D   D(Is=31.66p N=1.28 Rs=1.59 Cjo=4.27p Tt=6.12e-9
++		        M=0.32 Vj=0.7 Fc=0.5 Bv=250 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 108
+.model KD102E  D(Is=910.8f Rs=6.325 N=1 Xti=3 Eg=1.11 Bv=300.2 Ibv=1.521m
++                 Cjo=3.27p Vj=.71 M=.32 Fc=.5 Tt=6.12e-9)
+* Variant 109
+.Model KD103B   D(Is=87.08p N=1.21 Rs=1.13 Cjo=8.58p Tt=4.15e-9
++		  M=0.31 Vj=0.72 Fc=0.5 Bv=75 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 110
+.Model KD104B   D(Is=5.12p N=1.15 Rs=5.1 Cjo=41.2p Tt=8.28e-9 
++		  M=0.33 Vj=0.71 Fc=0.5 Bv=300 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 111
+.Model KD105D   D(Is=184.26p N=1.11 Rs=0.12 Cjo=120p  Tt=1.08e-8 
++		  M=0.33 Vj=0.71 Fc=0.5 Bv=400 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 112
+.Model KD106B   D(Is=214.3p N=1.23 Rs=6.3e-2 Cjo=130p Tt=3.85e-8 
++		  M=0.33 Vj=0.71 Fc=0.5 Bv=100 IBv=1e-10 Eg=1.11 Xti=3)
+* Variant 113
+.Model KD219B   D(Is=77.60n N=1.12 Rs=5m Cjo=63.1p  Tt=1.23n 
++		  M=0.33 Vj=0.54 Fc=0.5 Bv=15 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 114
+.Model KD220B   D(Is=9.20n N=1.25 Rs=9.1e-2 Cjo=164.5p Tt=1.23e-9 
++		  M=0.33 Vj=0.65 Fc=0.5 Bv=400 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 115
+.Model KD503B   D(Is=7.92e-12 N=1.11 Rs=3.3 Cjo=1.45p  Tt=2.19e-9 
++		  M=0.27 Vj=0.71 Fc=0.5 Bv=30 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 116
+.Model KD509B   D(Is=2.14p N=1.12 Rs=2.4 Cjo=3.15p  Tt=3.25e-9 
++		  M=0.33 Vj=0.71 Fc=0.5 Bv=50  IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 117
+.model KD510B   D(Is=928.2f Rs=2.302 N=1 Xti=3 Eg=1.11 Bv=70.23 Ibv=3.233m
++                 Cjo=3p Vj=.75 M=.25 Fc=.5 Tt=1.443n)
+* Variant 118
+.Model KD512B   D(Is=5.120f N=1.0  Rs=7.2 Cjo=0.85p  Tt=.961e-9 
++		  M=0.25 Vj=0.69 Fc=0.5 Bv=15 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 119
+.Model KD513B   D(Is=968.0f N=1.11 Rs=3.6 Cjo=1.81p  Tt=.850e-9 
++		   M=0.31 Vj=0.69 Fc=0.5 Bv=50 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 120
+.Model KD520B   D(Is=918.0f N=1.12 Rs=7.3  Cjo=3.35p  Tt=1.44e-9 
++		  M=0.33 Vj=0.68 Fc=0.5 Bv=15 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 121
+.Model KD521B   D(Is=515f  N=1.0  Rs=4.21 Cjo=3.25p  Tt=3.12e-9 
++		  M=0.26 Vj=0.68 Fc=0.5 Bv=75 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 122
+.Model KD522B   D(Is=727f N=1.1  Rs=2.17 Cjo=2.83p  Tt=2.38e-9 
++		  M=0.25 Vj=0.68 Fc=0.5 Bv=50 IBv=1e-11 Eg=1.11 Xti=3)
+* Variant 123
+.model KD522G   D(Is=5271f Rs=2.662 N=1 Xti=3 Eg=1.11 Bv=50.23 Ibv=862.1u
++                 Cjo=2.6p Vj=.75 M=.15 Fc=.5 Tt=1.443n)
+* Variant 124
+.model KD906B   D(Is=918.1f Rs=3.763 N=1 Xti=3 Eg=1.11 Bv=140.3 Ibv=1.847m
++                 Cjo=37.15p Vj=.75 M=.15 Fc=.5 Tt=279.8n)
+* Variant 125
+.model D2C133B  D(Is=31.47f Rs=0.3655 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.371 Ibv=47.97m Nbv=3)
+*         Ibvl=48.16m  
+*         Tbv1=-1.1m)
+* Variant 126
+.model D2C139B  D(Is=61.47f Rs=7.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.928 Ibv=43.84m 
+*         Nbv=60 Ibvl=3m Nbvl=180 
++         Tbv1=-1.0m)
+* Variant 127
+.model D2C147B  D(Is=71.47f Rs=7.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=4.73 Ibv=47.03m 
+*         Nbv=56 Ibvl=3m Nbvl=160 
++         Tbv1=-900u)
+* Variant 128
+.model D2C156B  D(Is=91.47f Rs=7.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=5.635 Ibv=57.48m 
+*         Nbv=46 Ibvl=3m Nbvl=160 
++         Tbv1=500u)
+* Variant 129
+.model D2C168B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=6.848 Ibv=95.79m 
+*         Nbv=28 Ibvl=3m Nbvl=120 
++         Tbv1=600u)
+* Variant 130
+.model D2C433B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.3 Ibv=60m 
+*         Nbv=14 Ibvl=3m Nbvl=180 
++         Tbv1=-1m)
+* Variant 131
+.model D2C439B  D(Is=31.47f Rs=9.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=3.9 Ibv=51m 
+*         Nbv=12 Ibvl=3m Nbvl=180 
++         Tbv1=-1m)
+* Variant 132
+.model D2C447B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=4.7 Ibv=43m 
+*         Nbv=10 Ibvl=3m Nbvl=180 
++         Tbv1=-800u)
+* Variant 133
+.model D2C456B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=5.6 Ibv=36m 
+*         Nbv=7 Ibvl=3m Nbvl=145 
++         Tbv1=500u)
+* Variant 134
+.model D2C468B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=6.8 Ibv=29m 
+*         Nbv=5 Ibvl=3m Nbvl=70 
++         Tbv1=650u)
+* Variant 135
+.model D2C482B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=8.2 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=800u)
+* Variant 136
+.model D2C510B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=10 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 137
+.model D2C512B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=12 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 138
+.model D2C515B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=15 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 139
+.model D2C518B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=18 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 140
+.model D2C522B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=22 Ibv=5m 
+*         Nbv=25 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 141
+.model D2C524B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=24 Ibv=5m 
+*         Nbv=30 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 142
+.model D2C527B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=27 Ibv=5m 
+*         Nbv=40 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 143
+.model D2C530B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=30 Ibv=5m 
+*         Nbv=45 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 144
+.model D2C536B  D(Is=99.47f Rs=8.494 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=220p M=.5959
++         Vj=.75 Fc=.5 Isr=2.035n Nr=2 Bv=36 Ibv=5m 
+*         Nbv=50 Ibvl=1m Nbvl=200 
++         Tbv1=1m)
+* Variant 145
+.model D2D212D  D(Is=50.09p Rs=.31 Ikf=.2752 N=1 Xti=3 Eg=1.11 Cjo=193.2p
++               M=.3801 Vj=.75 Fc=.5 Isr=5.975u Nr=2 Bv=250.3 Ibv=.1P
++               Tt=432.8n)
+* Variant 146
+.model D2d2997d D(Is=392.9p Rs=5.244m Ikf=.6194 N=1 Xti=3 Eg=1.11 Cjo=3.283n
++               M=.4371 Vj=.75 Fc=.5 Isr=17.38u Nr=2 Bv=300.1 Ibv=12.93m
++               Tt=100.1n)
+* Variant 147
+.model D2d2997p D(Is=592.9p Rs=5.244m Ikf=.6194 N=1 Xti=3 Eg=1.11 Cjo=3.283n
++               M=.4371 Vj=.75 Fc=.5 Isr=17.38u Nr=2 Bv=50.1 Ibv=12.93m
++               Tt=100.1n)
+* Variant 148
+.model D2d2998d D(Is=3.978u Rs=1.654m Ikf=14.37 N=1 Xti=3 Eg=1.11 Cjo=2.789n
++               M=.3852 Vj=.75 Fc=.5 Isr=6.189m Nr=2 Bv=14.93 Ibv=1.293m
++               Tt=100.1n)
+* Variant 149
+.model D2d2998e D(Is=3.978u Rs=1.654m Ikf=14.37 N=1 Xti=3 Eg=1.11 Cjo=2.789n
++               M=.3852 Vj=.75 Fc=.5 Isr=6.189m Nr=2 Bv=24.93 Ibv=1.293m
++               Tt=100.1n)
+* Variant 150
+.model D2d2997e D(Is=592.9p Rs=2.244m Ikf=.6194 N=1 Xti=3 Eg=1.11 Cjo=3.283n
++               M=.4371 Vj=.75 Fc=.5 Isr=17.38u Nr=2 Bv=300.1 Ibv=12.93m
++               Tt=100.1n)
+* Variant 151
+.model D2d231d  D(Is=704f Rs=5.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=150.2 Ibv=.5173
++               Tt=24.58n)
+* Variant 152
+.model D2d231e  D(Is=704f Rs=5.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=200.2 Ibv=.5173
++               Tt=24.58n)
+* Variant 153
+.model D2d251d  D(Is=704f Rs=5.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=50.2 Ibv=.5173
++               Tt=34.58n)
+* Variant 154
+.model D2d251e  D(Is=704f Rs=5.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=70.2 Ibv=.5173
++               Tt=34.58n)
+* Variant 155
+.model D2d251p  D(Is=704f Rs=5.988m Ikf=28.24 N=1 Xti=3 Eg=1.11 Cjo=838.3p
++               M=.4544 Vj=.75 Fc=.5 Isr=4.491u Nr=2 Bv=100.2 Ibv=.5173
++               Tt=34.58n)
+* Variant 155
+.model D2d906d  D(Is=7.54p Rs=1.076 Ikf=490.8u N=1 Xti=.1 Eg=1.11 Cjo=39.43p
++               M=.3333 Vj=.75 Fc=.5 Isr=429.5n Nr=2 Bv=80.25 Ibv=646.6u
++               Tt=777.1n)
+* Variant 156
+.model D2d510d  D(Is=88.25p Rs=1.475 Ikf=0 N=1 Xti=3 Eg=1.11 Cjo=4p M=.3333
++               Vj=.75 Fc=.5 Isr=1.227u Nr=2 Bv=50.22 Ibv=517.3u Tt=2.232n)
+* Variant 157
+.Model D814B   D(Is=.3920p N=1.19 Rs=1.54 Cjo=38.39p Tt=58.13n
++                M=0.45 Vj=0.76 Fc=0.5 Bv=9 IBv=0.5u  Eg=1.11 Xti=3)
+* Variant 158
+.Model D814V   D(Is=.5232p N=1.26 Rs=2.5 Cjo=37.56p Tt=58.34n 
++                M=0.43 Vj=0.76 Fc=0.5 Bv=10 IBv=1u  Eg=1.11 Xti=3)
+* Variant 159
+.Model D814G   D(Is=.1067p N=1.12 Rs=3.4 Cjo=28.08p Tt=68.87n 
++                M=0.43 Vj=0.75 Fc=0.5 Bv=11 IBv=1u Eg=1.11 Xti=3)
+* Variant 160
+.Model D814D   D(Is=.635p N=1.17 Rs=3.8 Cjo=29.15Ep Tt=59.96n 
++                M=0.41 Vj=0.71 Fc=0.5 Bv=13 IBv=1u Eg=1.11 Xti=3)
+* Variant 161
+.Model D815A   D(Is=.1221e-11 N=1.67 Rs=1.24 Cjo=73.15p Tt=389.8n 
++                M=0.37 Vj=0.78 Fc=0.5 Bv=5.6 IBv=5u Eg=1.11 Xti=3)
+* Variant 162
+.Model D815B   D(Is=.4173p N=1.22 Rs=0.27 Cjo=88.12p Tt=236.4n 
++                M=0.36 Vj=0.78 Fc=0.5 Bv=6.8 IBv=5u Eg=1.11 Xti=3)
+* Variant 163
+.Model D815V   D(Is=.5225e-10 N=1.84 Rs=0.35 Cjo=76.32p Tt=245.24n 
++                M=0.31 Vj=0.73 Fc=0.5 Bv=8.2 IBv=5u Eg=1.11 Xti=3)
+* Variant 164
+.Model D815G   D(Is=.9373e-10 N=1.55 Rs=0.6 Cjo=63.60p Tt=250.97n 
++                M=0.38 Vj=0.71 Fc=0.5 Bv=10 IBv=5u Eg=1.11 Xti=3)
+
+
