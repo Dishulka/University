@@ -374,3 +374,11 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /3_semestr/Electrical Engineering
+*.ms14 (Security copy)
+*.ms14 (Security copy)
+*.ANO
+*.bak_cir
+*.inx
+*.inx1
+*.inx2
+*.TNO
