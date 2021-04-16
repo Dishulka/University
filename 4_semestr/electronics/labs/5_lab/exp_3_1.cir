@@ -115,7 +115,7 @@ PinCnt=1
 Pin="PinA",0,0,-3,-7
 
 [Circuit]
-Window Placement=2,3, -1,-1, -9,-36, 0,0,1269,540
+Window Placement=2,3, -1,-1, -9,-36, 0,0,1437,540
 Default Object=Color=#000080
 Default Object Font=Height=-23,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -362,7 +362,7 @@ ALIGNBOTTOM=Yes
 
 [Section]
 Index=0
-Name="exp_1.1"
+Name="exp_3.1"
 Type=Main
 Enable=True
 CurrentPage 0=0
@@ -385,7 +385,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=0.5
-Px=268,160
+Px=359,140
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -446,6 +446,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
+SB 0=21,2
 Font=Height=-23,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -696,14 +697,6 @@ ALIGNBOTTOM=Yes
 Analysis=DC
 Name="Main"
 
-[AObject]
-Analysis=DC
-Object=Line
-CBorder=#000080
-w=0
-AliasID1=1
-Pos=9.995860927152318,0.00013765978367748339,0.0084175084175084174,-0.078046875000000016
-
 [Monte Carlo Options]
 Analysis=DC
 Status=Off
@@ -715,20 +708,20 @@ Seed=0
 
 [Limits]
 Analysis=DC
-I2Range=250u,500u,750u
+I2Range=497.603u
 I2=Ib
 I1Range=10,0,10m
 I1=Vc
 NPts=51000
-Temp=27
+Temp=30,-30,5
 MaxChng=5
 StateVar=Zero
 RunOption=Normal
 Temperature Type=Linear
 Accumulate Plots=False
 IgnoreExprErrors=False
-Sweep1 type=Linear
-Sweep2 type=List
+Sweep1 type=Auto
+Sweep2 type=None
 
 [WaveForm]
 Analysis=DC

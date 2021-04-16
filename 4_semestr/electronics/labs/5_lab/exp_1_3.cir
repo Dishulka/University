@@ -83,7 +83,7 @@ Name=Battery
 Definition=Battery
 Shape=Battery
 Mask=4865
-Used=48
+Used=49
 memo=Battery
 Label Offset=19,7,10,13
 PinCnt=2
@@ -95,7 +95,7 @@ Name=PNP
 Definition=PNP
 Shape=PNP
 Mask=4097
-Used=168
+Used=170
 memo=PNP Transistor
 Label Offset=37,-13,-8,35
 PinCnt=3
@@ -108,14 +108,14 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=769
-Used=730
+Used=731
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
 Pin="PinA",0,0,-3,-7
 
 [Circuit]
-Window Placement=2,3, -1,-1, -9,-36, 0,0,1437,540
+Window Placement=2,3, -1,-1, -9,-36, 0,0,1269,540
 Default Object=Color=#000080
 Default Object Font=Height=-23,FStyle=0,Color=#000080,Name=Arial
 Default Object Apply Border To Text=No
@@ -124,7 +124,7 @@ NodeVoltageFormat=3
 PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
-Window Placement in DC Analysis=2,3, -1,-1, -9,-36, 1275,0,2550,1186
+Window Placement in DC Analysis=2,3, -1,-1, -9,-36, 0,0,1269,1176
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -194,7 +194,7 @@ Style=8192
 
 [Attr]
 ON=37,-37,MODEL
-V=2N3467
+V=2N3485
 Style=8192
 
 [Attr]
@@ -385,7 +385,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=0.5
-Px=269,163
+Px=138,29
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -494,7 +494,7 @@ ComponentCounts=True
 
 [DC]
 WinID=3
-Window Placement=2,3, -1,-1, -9,-36, 1275,0,2550,1186
+Window Placement=2,3, -1,-1, -9,-36, 0,0,1269,1176
 Font=Height=-23,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -753,7 +753,7 @@ Analysis=DC
 Plt=1
 AliasID=2
 XExp=DCINPUT1
-YExp=200m/VC(Q1)
+YExp=240m/VC(Q1)
 XRng=10,0.001
 YRng=0.06,-0.09
 Options=LINEARX,LINEARY
@@ -779,7 +779,7 @@ Analysis=DC
 Plt=1
 AliasID=3
 XExp=DCINPUT1
-YExp=-32m
+YExp=-42m
 XRng=10,0.001
 YRng=0.06,-0.09
 Options=LINEARX,LINEARY
