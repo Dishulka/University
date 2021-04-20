@@ -375,10 +375,15 @@ MigrationBackup/
 FodyWeavers.xsd
 /3_semestr/Electrical Engineering
 *.ms14 (Security copy)
-*.ms14 (Security copy)
-*.ANO
-*.bak_cir
+*.TNO
 *.inx
 *.inx1
 *.inx2
-*.TNO
+*.inx3
+*.inx4
+*.inx5
+*.inx6
+*.DNO
+*.bak_cir
+*.DDNO
+*.DNO
