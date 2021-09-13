@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask source</title>
+</head>
+<body>
+    <h1>Hello, i am {{ name }}</h1>
+
+    <p>some text from paragraph</p>
+
+    {%  if today %}
+    <p>{{ today }}</p>
+    {% else %}
+    <p>No today parameter</p>
+    {% endif %}
+
+    <ul>
+        {% for item in list_items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+</body>
+</html>
