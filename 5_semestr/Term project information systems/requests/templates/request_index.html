@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+		<title>Работа с запросами</title>
+  		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Выберите запрос</h1>
+		<form action="{{ url_for('requests.requests_request1') }}">
+      			<button type="submit">1. Найти работников, взятых в конкретном году и месяце.</button>
+    		</form>
+		<form action="{{ url_for('requests.requests_request2') }}">
+      			<button type="submit">2. Найти работников, нанятых на работу за последнее число дней</button>
+    		</form>
+        <form action="{{ url_for('requests.requests_request3') }}">
+      			<button type="submit">3. Найти автомобили с серией</button>
+    		</form>
+        <form action="{{ url_for('requests.requests_request4') }}">
+      			<button type="submit">4. Найти количество ТТН в году</button>
+    		</form>
+        <form action="{{ url_for('requests.requests_request5') }}">
+      			<button type="submit">5. Найти общий вес груза, перевезенного в году</button>
+    		</form>
+        <form action="{{ url_for('requests.requests_request6') }}">
+      			<button type="submit">6. Найти средний вес,перевезенного груза в каждом месяце конкретного года</button>
+    		</form>
+		<form action="{{ url_for('index') }}">
+      			<button type="submit" class="small_button">Назад</button>
+    		</form>
+	</body>
+</html>

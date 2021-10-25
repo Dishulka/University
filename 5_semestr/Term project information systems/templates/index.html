@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+		<title>Главное меню</title>
+  		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Главное меню</h1>
+		<form action="{{ url_for('requests.requests_index') }}">
+      			<button type="submit">Сделать запрос</button>
+    		</form>
+		<form action="{{ url_for('reports.reports_index') }}">
+      			<button type="submit">Работать с отчётами</button>
+    		</form>
+		<form action="{{ url_for('exit') }}">
+      			<button type="submit" class="small_button">Выйти</button>
+    		</form>
+	</body>
+</html>

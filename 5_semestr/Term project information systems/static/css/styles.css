@@ -1,0 +1,40 @@
+h1 { 
+	color:blue; text-align:center; margin-block:50px; 
+}
+h2 { 
+	color:deepskyblue; text-align:center; 
+}
+button {
+      	background-color:deepskyblue; border:none; color:white;
+      	padding:20px 50px; text-align:center; text-decoration:none;
+      	display:block; font-size:20px; cursor:pointer; margin:auto;
+	margin-block:30px;
+}
+.small_button {
+	padding:10px 20px;
+}
+.inline_button {
+	padding:10px 20px; display:inline;
+}
+input {
+	padding:10px 20px; font-size:20px
+}
+.form_request1 { 
+        width:365px;
+        margin:auto;
+}
+.form_request2 { 
+        width:575px;
+        margin:auto;
+}
+table {
+border-collapse:collapse; border:none;
+text-align:center;
+margin:0 auto;
+}
+th, td {
+border: 1px solid black;
+}
+.center {
+margin:auto; display:block; margin-block:20px;
+}

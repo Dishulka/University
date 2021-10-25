@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<title>Результат</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<h1>Результат выполнения запроса</h1>
+{% block child %}{% endblock %}
+<form action="{{ url_for('requests.requests_index') }}">
+<button type="submit" class="small_button">Назад</button>
+</form>
+</body>
+</html>

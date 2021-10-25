@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+		<title>Запрос 3.</title>
+  		<meta charset="UTF-8">
+	</head>
+
+	<body>
+		<h1>Автомобили с серией XX</h1>
+		<form method="post" class="form_request1">
+			<input  type="text" name="licensePlates" min=0 autofocus placeholder="XX" required>
+      			<button type="submit" class="inline_button">Поиск</button>
+		</form>
+		<form action="{{ url_for('requests.requests_index') }}">
+      			<button type="submit" class="small_button">Назад</button>
+    		</form>
+	</body>
+</html>

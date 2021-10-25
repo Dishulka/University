@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<title>Запрос 1.</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<h1>Фамилии и должности работников, взятых на работу в N году и M месяце</h1>
+<form method="post">
+<input type="number" name="year" class="center" min=2000 max=2021 autofocus placeholder="Year" required>
+<input type="number" name="month" class="center" min=0 max=12 placeholder="Month" required>
+<button type="submit">Поиск</button>
+</form>
+<form action="{{ url_for('requests.requests_index') }}">
+<button type="submit" class="small_button">Назад</button>
+</form>
+</body>
+</html>
