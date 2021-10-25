@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask</title>
+</head>
+<body>
+<h1>
+    Main
+</h1>
+
+<a>
+    Menu
+</a>
+<div>
+    <a href="/user">User/</a>
+    <a href="/exit">Exit</a>
+    <a href="{{ url_for('user.create_user') }}">Blueprint</a>
+</div>
+</body>
+</html>

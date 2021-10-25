@@ -1,0 +1,14 @@
+{
+  "typical": [
+    "auth",
+    ""
+  ],
+  "admin": [
+    "auth"
+    "profile"
+    ""
+  ],
+  "unauthorized":[
+      "auth"
+  ]
+}
