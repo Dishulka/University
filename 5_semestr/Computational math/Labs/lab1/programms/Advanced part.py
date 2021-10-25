@@ -105,7 +105,6 @@ def qubic_spline(x, qs_coeff, x_nodes):
     return res
 
 
-
 x_i_nodes = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
 y_i_nodes = [3.37, 3.95, 3.73, 3.59, 3.15, 3.15, 3.05, 3.86, 3.60, 3.70, 3.02]
 
@@ -115,6 +114,19 @@ y_new_nodes_list = generate_vectors(y_i_nodes)
 x_max = x_i_nodes[len(x_i_nodes) - 1]
 x_min = x_i_nodes[0]
 x = np.linspace(x_min, x_max, (x_max - x_min) * 1000, endpoint=True)
+
+# Lagrange
+plt.figure(dpi=300)
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid()
+
+plt.plot(x, L(x, x_i_nodes, y_i_nodes), color="blue", linewidth=1.0, label="L(x)", linestyle="-")
+plt.scatter(x_i_nodes, y_i_nodes, color="red", marker="o")
+plt.savefig('.\Figures\Lagrange.svg')
+plt.legend()
+
+plt.show()
 
 # Lagrange 1000 figures X
 lagrange_new_nodes_x = []  # Array of Lagrange values for each 1000 x
@@ -145,6 +157,7 @@ plt.plot(x, equations_lagrange_x[1], color="green", label="h_l", zorder=1)
 plt.plot(x, equations_lagrange_x[2], color="blue", linestyle="--", label="h_m", zorder=1)
 plt.fill_between(x, equations_lagrange_x[0], equations_lagrange_x[1], alpha=0.1, color="blue", zorder=0)
 plt.scatter(x_i_nodes, y_i_nodes, color="orange", marker="o", zorder=2)
+plt.legend()
 plt.savefig('.\Figures\ConfidenceStripLagrangeX.svg')
 plt.show()
 
@@ -177,6 +190,7 @@ plt.plot(x, equations_lagrange_y[1], color="green", label="h_l", zorder=1)
 plt.plot(x, equations_lagrange_y[2], color="blue", linestyle="--", label="h_m", zorder=1)
 plt.fill_between(x, equations_lagrange_y[0], equations_lagrange_y[1], alpha=0.1, color="blue", zorder=0)
 plt.scatter(x_i_nodes, y_i_nodes, color="orange", marker="o", zorder=2)
+plt.legend()
 plt.savefig('.\Figures\ConfidenceStripLagrangeY.svg')
 plt.show()
 
@@ -213,6 +227,7 @@ plt.plot(x, equations_cubic_x[1], color="green", label="h_l", zorder=1)
 plt.plot(x, equations_cubic_x[2], color="blue", linestyle="--", label="h_m", zorder=1)
 plt.fill_between(x, equations_cubic_x[0], equations_cubic_x[1], alpha=0.1, color="blue", zorder=0)
 plt.scatter(x_i_nodes, y_i_nodes, color="orange", marker="o", zorder=2)
+plt.legend()
 plt.savefig('.\Figures\ConfidenceStripCubicX.svg')
 plt.show()
 
@@ -249,5 +264,6 @@ plt.plot(x, equations_cubic_y[1], color="green", label="h_l", zorder=1)
 plt.plot(x, equations_cubic_y[2], color="blue", linestyle="--", label="h_m", zorder=1)
 plt.fill_between(x, equations_cubic_y[0], equations_cubic_y[1], alpha=0.1, color="blue", zorder=0)
 plt.scatter(x_i_nodes, y_i_nodes, color="orange", marker="o", zorder=2)
+plt.legend()
 plt.savefig('.\Figures\ConfidenceStripCubicY.svg')
 plt.show()
