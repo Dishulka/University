@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+		<title>Главное меню</title>
+  		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="div_like_belt_1">
+			<p class="article_1">Главное меню</p>
+		</div>
+		<p class="article_2">Вы авторизованы как: {{name}}</p>
+		<div class="div_like_button_1">
+			<a href="{{ url_for('requests.requests_index') }}">Сделать запрос</a>
+		</div>
+		<div class="div_like_button_1">
+			<a href="{{ url_for('reports.reports_index') }}">Работать с отчётами</a>
+		</div>
+
+		{% if name == 'Гость' %}
+		<div class="div_like_button_1">
+			<a href="{{ url_for('auth.auth_index') }}">Авторизоваться</a>
+		</div>
+		{% else %}
+		<div class="div_like_button_1">
+			<a href="{{ url_for('auth.auth_unauth') }}">Авторизоваться</a>
+		</div>
+		{% endif %}
+
+		<div class="div_like_button_1">
+			<a href="{{ url_for('exit') }}" class="a_yellow">Выйти</a>
+		</div>
+	</body>
+</html>
