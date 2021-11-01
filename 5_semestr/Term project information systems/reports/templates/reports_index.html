@@ -7,10 +7,11 @@
 	</head>
 
 	<body>
-		<h1>Извините, но данная страница пока не доступна :(</h1>
-		<h2>Пожалуйста, зайдите позже.</h2>
-		<form action="{{ url_for('index') }}">
-      			<button type="submit" class="small_button">Вернуться</button>
-    		</form>
+        <div class="div_like_belt_1">
+			<p class="article_1">Извините, но данная страница пока не доступна. Пожалуйста, зайдите позже.</p>
+		</div>
+        <div class="div_like_button_1">
+			<a href="{{ url_for('index') }}" class="a_yellow">Назад</a>
+		</div>
 	</body>
 </html>

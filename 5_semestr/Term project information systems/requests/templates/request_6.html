@@ -7,13 +7,15 @@
 	</head>
 
 	<body>
-		<h1>Средний вес в каждом месяце N года</h1>
-		<form method="post" class="form_request1">
+        <div class="div_like_belt_1">
+			<p class="article_1">Средний вес в каждом месяце N года</p>
+		</div>
+		<form method="post">
 			<input  type="number" name="year" min=0 autofocus placeholder="0123456789" required>
-      			<button type="submit" class="inline_button">Поиск</button>
+            <button type="submit" class="inline_button">Поиск</button>
 		</form>
-		<form action="{{ url_for('requests.requests_index') }}">
-      			<button type="submit" class="small_button">Назад</button>
-    		</form>
+        <div class="div_like_button_1">
+			<a href="{{ url_for('requests.requests_index') }}" class="a_yellow">Назад</a>
+		</div>
 	</body>
 </html>
