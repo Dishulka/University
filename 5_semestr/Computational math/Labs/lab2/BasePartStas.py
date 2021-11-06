@@ -48,16 +48,6 @@ def yFromX(x: float) -> float:
     return C * (0.5 - 0.5 * np.cos(2 * t))
 
 
-def yFromX(x: float) -> float:
-    def xFromTForRoot(t: float, x: float) -> float:
-        C: float = 1.03439984
-        return C * (t - 0.5 * np.sin(2 * t)) - x
-
-    C: float = 1.03439984
-    t = scipy.optimize.fsolve(func=xFromTForRoot, x0=0, args=x)
-    return C * (0.5 - 0.5 * np.cos(2 * t))
-
-
 def deritativeParametr(x: float) -> float:
     def xFromTForRoot(t: float, x: float) -> float:
         C: float = 1.03439984
