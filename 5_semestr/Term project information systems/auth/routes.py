@@ -7,7 +7,8 @@ auth_app = Blueprint('auth', __name__, template_folder='templates')
 SQLserver = SQLmaster(json.load(open('config/configDataBase.json', 'r')))
 
 LevelToName = {'0': 'Пользователь',
-               '1': 'Админ'}
+               '1': 'Админ',
+               '10':'Developer'}
 
 
 @auth_app.route('/', methods=['GET', 'POST'])

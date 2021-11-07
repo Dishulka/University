@@ -17,5 +17,15 @@ class SQLmaster:
         elif cursor:
             cursorDict = self.db_connect.conn.cursor(pymysql.cursors.DictCursor)
             cursorDict.execute(request)
-            resulting=cursorDict.fetchall()
+            resulting = cursorDict.fetchall()
             return resulting
+
+    def update_insert(self, filename, **kwargs):
+        cursor = self.db_connect.cursor
+        request = self.db_request.get(filename, **kwargs)
+        if cursor is None:
+            raise ValueError('Cursor is None')
+        elif cursor:
+            cursor.execute(request)
+            self.db_connect.conn.commit()
+            return None

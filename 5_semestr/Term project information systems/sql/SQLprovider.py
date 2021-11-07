@@ -12,6 +12,4 @@ class SQLProvider:
                 self._scripts[file] = Template(open(f'{file_path}/{file}', 'r').read())
 
     def get(self, file_name, **kwargs):
-        f=file_name
-        k=kwargs
         return self._scripts[file_name].substitute(**kwargs)

@@ -631,3 +631,6 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm+all,python
 .idea
+/5_semestr/Computational math/Labs/lab1/educmm_lab_2021_rk6_56b_sergeevadk_lab1.pdf
+/5_semestr/Computational math/Labs/lab2/Reports/educmm_lab_2021_rk6_56b_sergeevadk_lab2.pdf
+/5_semestr/Computational math/Labs/lab2/Reports/educmm_lab_2021_rk6_56b_sergeevadk_lab2_fixed.pdf
