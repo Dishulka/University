@@ -20,14 +20,14 @@ def auth_index():
         login = request.form.get('login')
         password = request.form.get('password')
 
-        result = SQLserver.request('requestGroup.sql')
+        result = SQLserver.request('requestGroup.sql', Login=login, Password=password)
 
-        for accessRights in result:
-            if login == accessRights['Login'] and password == accessRights['Password']:
-                session['group_name'] = LevelToName[f"{accessRights['AccessLevel']}"]
-                return render_template('auth_successfully.html', name=session['group_name'])
+        if len(result) == 0:
+            return render_template('auth_failed.html')
+        else:
+            session['group_name'] = LevelToName[f"{result[0]['AccessLevel']}"]
+            return render_template('auth_successfully.html', name=session['group_name'])
 
-        return render_template('auth_failed.html')
 
 
 @auth_app.route('/unauth')

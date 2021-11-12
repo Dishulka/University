@@ -45,7 +45,6 @@ def edit_users():
         user['nameUpdate'] = f'Редактировать'
         user['urlDelete'] = url_for('edit.edit_users') + f'/delete' + f'/{idGroup}'
         user['nameDelete'] = f'Удалить'
-        print()
     table = ItemTableEditUsers(result)
 
     HTMLtable = table.__html__()
