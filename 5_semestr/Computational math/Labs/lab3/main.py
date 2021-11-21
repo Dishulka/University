@@ -33,12 +33,12 @@ def euler(t_0, t_n, f, h, mode):
     return result
 
 
-def implicit_euler_for_v(v_2, v_i, u_i, f, h):
-    return v_2 - v_i - h * f[0](v_i, u_i)
+def implicit_euler_for_v(v, v_i, u_i, f, h):
+    return v - v_i - h * f[0](v_i, u_i)
 
 
-def implicit_euler_for_u(u_2, v_i, u_i, f, h, mode):
-    return u_2 - u_i - h * f[1](v_i, u_i, mode)
+def implicit_euler_for_u(u, v_i, u_i, f, h, mode):
+    return u - u_i - h * f[1](v_i, u_i, mode)
 
 
 def implicit_euler(t_0, t_n, f, h, mode):
@@ -121,28 +121,3 @@ for i in range(4):
     plt.legend()
 
     plt.show()
-
-
-'''
-alpha = 0.5
-beta = 0.5
-xi = 0.5
-gamma = 0.5
-phi = 0.5
-si = 0.5
-tetta = 0.5
-tau = 0.5
-
-a = 0.02
-b = 0.2
-c = -65 + 15 * alpha * alpha
-d = 8 - 6 * beta * beta
-I_0 = 5 * xi
-
-W = [[0] * 1000 for i in range(1000)]
-for i in range(1000):
-    for j in range(1000):
-        if (j <= 800):
-            W[i][j] = 0.5 * tetta
-        else:
-            W[i][j] = -tau'''
