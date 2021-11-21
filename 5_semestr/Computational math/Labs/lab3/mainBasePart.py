@@ -117,7 +117,6 @@ for i in range(4):
     plt.plot(t, v_1, linewidth=1.0, label="euler", linestyle="-")
     plt.plot(t, v_2, linewidth=1.0, label="implicit euler", linestyle="--")
     plt.plot(t, v_3, linewidth=1.0, label="runge-kutta", linestyle="-")
-    # plt.savefig('.\Figures\Trajectory.svg')
     plt.legend()
-
+    plt.savefig(f'.\Figures\Trajectory{i+1}.svg')
     plt.show()
