@@ -1,0 +1,4 @@
+SELECT idOrder
+FROM orders
+ORDER BY idOrder DESC
+LIMIT 1

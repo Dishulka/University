@@ -1,0 +1,16 @@
+{% macro render_service(service, show_form=False) %}
+    <div style="border-style: solid; border-color:black; margin: 15px">
+        <p>
+            <span>Номер: {{ service['idService'] }}</span>
+            <span>Имя: {{ service['Name'] }}</span>
+            <span>Цена: {{ service['CostPerUnit'] }}</span>
+        </p>
+        {% if show_form %}
+            <form action="" method="post">
+                <input type="hidden" name="idService" value="{{ service['idService'] }}">
+                <input type="hidden" name="WhatRow" value="Add">
+                <input type="submit" value="Добавить в корзину">
+            </form>
+        {% endif %}
+    </div>
+{% endmacro %}
