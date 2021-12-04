@@ -1,13 +1,24 @@
 {
-  "Пользователь": [
+  "Сотрудник": [
+      "auth",
+      "edit",
+      "basket",
+      "reports",
+      ""
+  ],
+  "Разработчик": [
       "auth",
       "requests",
+      "reports",
+      "basket",
+      "edit",
       ""
   ],
   "Админ": [
       "auth",
       "requests",
       "reports",
+      "basket",
       "edit",
       ""
   ],

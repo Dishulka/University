@@ -1,12 +1,15 @@
 import json
+
 from flask import Blueprint, render_template, url_for, request
 from flask_table import Table, Col
 from flask_table.html import element
+
 from access import group_permission_decorator
-from sql.SQLmaster import SQLmaster
+from sql.SqlMaster import SQLMaster
 
 edit_app = Blueprint('edit', __name__, template_folder='templates')
-SQLserver = SQLmaster(json.load(open('config/configDataBase.json', 'r')))
+
+SQLServer = SQLMaster(json.load(open('config/configDataBase.json', 'r')))
 
 class ExternalURLCol(Col):
     def __init__(self, name, url_attr, class_attr, **kwargs):
@@ -21,7 +24,7 @@ class ExternalURLCol(Col):
         return element('a', {'href': url, 'class': classURL}, content=text)
 
 
-class ItemTableEditUsers(Table):
+class ItemTableEditUser(Table):
     idGroup = Col('id')
     Login = Col('Логин')
     Password = Col('Пароль')
@@ -49,42 +52,42 @@ def edit_index():
 @edit_app.route('/users')
 @group_permission_decorator
 def edit_users():
-    result = SQLserver.request('reqUsersInfo.sql')
+    result = SQLServer.request('edit_users_info.sql')
     for user in result:
-        idGroup = user['idGroup']
-        user['urlUpdate'] = url_for('edit.edit_users') + f'/{idGroup}'
+        id_group = user['idGroup']
+        user['urlUpdate'] = url_for('edit.edit_users') + f'/{id_group}'
         user['nameUpdate'] = f'Редактировать'
         user['classUpdate'] = f""
-        user['urlDelete'] = url_for('edit.edit_users') + f'/delete' + f'/{idGroup}'
+        user['urlDelete'] = url_for('edit.edit_users') + f'/delete' + f'/{id_group}'
         user['nameDelete'] = f'Удалить'
         user['classDelete'] = f"confirmable"
-    table = ItemTableEditUsers(result)
+    table = ItemTableEditUser(result)
 
-    HTMLtable = table.__html__()
+    HTML_table = table.__html__()
     file = open(r'.\edit\templates\edit_child.html', 'w', encoding='utf-8')
     file.write('{% extends \'edit_base.html\' %}{% block child %}<div class="article_3">')
-    file.write(HTMLtable)
+    file.write(HTML_table)
     file.write('</div>{% endblock %}')
     file.close()
 
     return render_template('edit_child.html', title="Все пользователи",
-                           url_for_insert=url_for('edit.edit_insert_user'), insertTitle="Добавить пользователя")
+                           url_for_insert=url_for('edit.edit_insert_user'), insert_title="Добавить пользователя")
 
 
 @edit_app.route('/users/<user>', methods=['GET', 'POST'])
 @group_permission_decorator
 def edit_user(user):
     if request.method == 'GET':
-        result = SQLserver.request('reqGetUser.sql', id=user)[0]
-        return render_template('edit_user.html', idGroup=result['idGroup'], Login=result['Login'],
-                               Password=result['Password'], AccessLevel=result['AccessLevel'])
+        result = SQLServer.request('edit_get_user.sql', id=user)[0]
+        return render_template('edit_user.html', id_group=result['idGroup'], login=result['Login'],
+                               password=result['Password'], accessLevel=result['AccessLevel'])
     else:
-        idGroup = int(user)
-        Login = request.form.get('Login')
-        Password = request.form.get('Password')
-        AccessLevel = int(request.form.get('AccessLevel'))
-        SQLserver.update_insert('reqUpdateUser.sql', idGroup=idGroup, Login=Login, Password=Password,
-                                AccessLevel=AccessLevel)
+        id_group = user
+        login = request.form.get('login')
+        password = request.form.get('password')
+        access_level = request.form.get('access_level')
+        SQLServer.update_insert('edit_update_user.sql', idGroup=id_group, Login=login, Password=password,
+                                AccessLevel=access_level)
         return render_template('edit_result_user.html')
 
 
@@ -94,64 +97,63 @@ def edit_insert_user():
     if request.method == 'GET':
         return render_template('edit_insert_user.html')
     else:
-        Login = request.form.get('Login')
-        Password = request.form.get('Password')
-        AccessLevel = int(request.form.get('AccessLevel'))
-        SQLserver.update_insert('reqInsertUser.sql', Login=Login, Password=Password,
-                                AccessLevel=AccessLevel)
+        login = request.form.get('login')
+        password = request.form.get('password')
+        access_level = request.form.get('access_level')
+        SQLServer.update_insert('edit_insert_user.sql', Login=login, Password=password,
+                                AccessLevel=access_level)
         return render_template('edit_result_user.html')
 
 
 @edit_app.route('/users/delete/<user>')
 @group_permission_decorator
 def edit_delete_user(user):
-    SQLserver.update_insert('reqDeleteUser.sql', idGroup=int(user))
-    return render_template('edit_delete_user.html', idGroup=int(user))
+    SQLServer.update_insert('edit_delete_user.sql', idGroup=user)
+    return render_template('edit_delete_user.html', idGroup=user)
 
 
 @edit_app.route('/customers')
 @group_permission_decorator
 def edit_customers():
-    result = SQLserver.request('reqCustomerInfo.sql')
+    result = SQLServer.request('edit_customer_info.sql')
     for customer in result:
-        idClient = customer['idClient']
-        customer['urlUpdate'] = url_for('edit.edit_customers') + f'/{idClient}'
+        id_client = customer['idClient']
+        customer['urlUpdate'] = url_for('edit.edit_customers') + f'/{id_client}'
         customer['nameUpdate'] = f'Редактировать'
         customer['classUpdate'] = f""
-        customer['urlDelete'] = url_for('edit.edit_customers') + f'/delete' + f'/{idClient}'
+        customer['urlDelete'] = url_for('edit.edit_customers') + f'/delete' + f'/{id_client}'
         customer['nameDelete'] = f'Удалить'
         customer['classDelete'] = f"confirmable"
     table = ItemTableEditCustomer(result)
 
-    HTMLtable = table.__html__()
+    HTML_table = table.__html__()
     file = open(r'.\edit\templates\edit_child.html', 'w', encoding='utf-8')
     file.write('{% extends \'edit_base.html\' %}{% block child %}<div class="article_3">')
-    file.write(HTMLtable)
+    file.write(HTML_table)
     file.write('</div>{% endblock %}')
     file.close()
 
     return render_template('edit_child.html', title="Все заказчики",
-                           url_for_insert=url_for('edit.edit_insert_customer'), insertTitle="Добавить заказчика")
-
+                           url_for_insert=url_for('edit.edit_insert_customer'), insert_title="Добавить заказчика")
 
 
 @edit_app.route('/customers/<customer>', methods=['GET', 'POST'])
 @group_permission_decorator
 def edit_customer(customer):
     if request.method == 'GET':
-        result = SQLserver.request('reqGetCustomer.sql', id=customer)[0]
-        return render_template('edit_customer.html', idClient=result['idClient'], Name=result['Name'],
-                               Adress=result['Adress'], TotalWeight=result['TotalWeight'],
-                               DateTotalWeight=result['DateTotalWeight'])
+        result = SQLServer.request('get_customer.sql', id=customer)[0]
+        return render_template('edit_customer.html', id_client=result['idClient'], name=result['Name'],
+                               adress=result['Adress'], total_weight=result['TotalWeight'],
+                               date_total_weight=result['DateTotalWeight'])
     else:
-        idClient = int(customer)
-        Name = request.form.get('Name')
-        Adress = request.form.get('Adress')
-        TotalWeight = int(request.form.get('TotalWeight'))
-        DateTotalWeight = request.form.get('DateTotalWeight')
+        id_client = customer
+        name = request.form.get('name')
+        adress = request.form.get('adress')
+        total_weight = request.form.get('total_weight')
+        date_total_weight = request.form.get('date_total_weight')
 
-        SQLserver.update_insert('reqUpdateCustomer.sql', idClient=idClient, Name=Name, Adress=Adress,
-                                TotalWeight=TotalWeight, DateTotalWeight=DateTotalWeight)
+        SQLServer.update_insert('edit_update_customer.sql', idClient=id_client, Name=name, Adress=adress,
+                                TotalWeight=total_weight, DateTotalWeight=date_total_weight)
         return render_template('edit_result_customer.html')
 
 
@@ -161,18 +163,18 @@ def edit_insert_customer():
     if request.method == 'GET':
         return render_template('edit_insert_customer.html')
     else:
-        Name = request.form.get('Name')
-        Adress = request.form.get('Adress')
-        TotalWeight = request.form.get('TotalWeight')
-        DateTotalWeight = request.form.get('DateTotalWeight')
+        name = request.form.get('name')
+        adress = request.form.get('adress')
+        total_weight = request.form.get('total_weight')
+        date_total_weight = request.form.get('date_total_weight')
 
-        SQLserver.update_insert('reqInsertCustomer.sql', Name=Name, Adress=Adress,
-                                TotalWeight=TotalWeight, DateTotalWeight=DateTotalWeight)
+        SQLServer.update_insert('edit_insert_customer.sql', Name=name, Adress=adress,
+                                TotalWeight=total_weight, DateTotalWeight=date_total_weight)
         return render_template('edit_result_customer.html')
 
 
 @edit_app.route('/customers/delete/<customer>')
 @group_permission_decorator
 def edit_delete_customer(customer):
-    SQLserver.update_insert('reqDeleteCustomer.sql', idClient=int(customer))
-    return render_template('edit_delete_customer.html', idClient=int(customer))
+    SQLServer.update_insert('edit_delete_customer.sql', idClient=customer)
+    return render_template('edit_delete_customer.html', idClient=customer)

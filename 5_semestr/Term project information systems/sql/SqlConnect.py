@@ -1,11 +1,8 @@
-from typing import Optional
-import pymysql
 from pymysql import connect
 from pymysql.err import OperationalError
 
 
-class SQLconnect:
-
+class SQLConnect:
     def __init__(self, config: dict):
         self.config = config
         self.cursor = None
@@ -23,7 +20,6 @@ class SQLconnect:
                 print('Такой базы данных не существует')
         except UnicodeEncodeError:
             print('Были введены символы на русском языке')
-
 
     def __exit__(self, exc_type, exc_value, exc_trace):
         if exc_value:

@@ -1,14 +1,17 @@
 import json
+
 from flask import Blueprint, render_template, request, session
 from access import group_permission_decorator
-from sql.SQLmaster import SQLmaster
+
+from sql.SqlMaster import SQLMaster
 
 auth_app = Blueprint('auth', __name__, template_folder='templates')
-SQLserver = SQLmaster(json.load(open('config/configDataBase.json', 'r')))
 
-LevelToName = {'0': 'Пользователь',
+SQLServer = SQLMaster(json.load(open('config/configDataBase.json', 'r')))
+
+LevelToName = {'0': 'Разработчик',
                '1': 'Админ',
-               '10':'Developer'}
+               '2': 'Сотрудник'}
 
 
 @auth_app.route('/', methods=['GET', 'POST'])
@@ -20,7 +23,7 @@ def auth_index():
         login = request.form.get('login')
         password = request.form.get('password')
 
-        result = SQLserver.request('requestGroup.sql', Login=login, Password=password)
+        result = SQLServer.request('auth_group.sql', Login=login, Password=password)
 
         if len(result) == 0:
             return render_template('auth_failed.html')

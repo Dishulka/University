@@ -2,17 +2,17 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-		<title>Запрос 3.</title>
+		<title>Запрос 2</title>
   		<meta charset="UTF-8">
 	</head>
 
 	<body>
         <div class="div_like_belt_1">
-			<p class="article_1">Автомобили с серией XX</p>
+			<p class="article_1">Автомобили с годом выпуска</p>
 		</div>
 
 		<form method="post">
-			<input  type="text" name="licensePlates" min=0 autofocus placeholder="XX" required>
+			<input  type="text" name="car_year" min=0 autofocus placeholder="XXXX" required>
             <button type="submit" class="inline_button">Поиск</button>
 		</form>
         <div class="div_like_button_1">

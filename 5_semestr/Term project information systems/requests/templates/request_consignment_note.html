@@ -2,16 +2,16 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-		<title>Запрос 2.</title>
+		<title>Запрос 3</title>
   		<meta charset="UTF-8">
 	</head>
 
 	<body>
         <div class="div_like_belt_1">
-			<p class="article_1">Работники нанятые за последние N дней</p>
+			<p class="article_1">Количество ТТН в N году</p>
 		</div>
 		<form method="post">
-			<input  type="number" name="hiredDays" min=0 autofocus placeholder="0123456789" required>
+			<input  type="number" name="year" min=0 autofocus placeholder="XXXX" required>
             <button type="submit" class="inline_button">Поиск</button>
 		</form>
         <div class="div_like_button_1">

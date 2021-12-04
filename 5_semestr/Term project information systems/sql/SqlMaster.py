@@ -1,13 +1,13 @@
 import pymysql
 
-from sql.SQLconnect import SQLconnect
-from sql.SQLprovider import SQLProvider
+from sql.SqlConnect import SQLConnect
+from sql.SqlProvider import SQLProvider
 
 
-class SQLmaster:
-    def __init__(self, dbconfig):
-        self.db_connect = SQLconnect(dbconfig)
-        self.db_request = SQLProvider(r'.\sql\requests')  # Сюда путь до папки с запросами
+class SQLMaster:
+    def __init__(self, db_config):
+        self.db_connect = SQLConnect(db_config)
+        self.db_request = SQLProvider(r'.\sql\requests')
 
     def request(self, filename, **kwargs):
         cursor = self.db_connect.cursor

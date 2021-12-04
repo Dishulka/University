@@ -1,10 +1,13 @@
 import json
+
 from flask import Flask, render_template, session
 from access import group_permission_decorator
+
 from auth.routes import auth_app
 from edit.routes import edit_app
 from reports.routes import reports_app
 from requests.routes import requests_app
+from basket.routes import basket_app
 
 app = Flask(__name__)
 
@@ -16,6 +19,8 @@ app.register_blueprint(auth_app, url_prefix='/auth')
 app.register_blueprint(requests_app, url_prefix='/requests')
 app.register_blueprint(reports_app, url_prefix='/reports')
 app.register_blueprint(edit_app, url_prefix='/edit')
+app.register_blueprint(basket_app, url_prefix='/basket')
+
 
 @app.route('/')
 @group_permission_decorator

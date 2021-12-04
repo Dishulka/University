@@ -96,6 +96,27 @@ th, td {
 	font-size:30px; text-align:center;
     font-family:Arial; font-weight: bold; margin-bottom: 50px;
 }
+.article_4 {
+	font-size:50px; text-align: center; color: white;
+    font-family:Arial;
+}
+.article_5 {
+	font-size:50px; text-align: center; color: black;
+    font-family:Arial;
+}
 .img_center {
     margin:auto; display:block;
+}
+select {
+    background-color: #216e61;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial;
+    display: block;
+    width: 500px;
+    height: 90px;
+    margin: auto;
 }
