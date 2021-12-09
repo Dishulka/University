@@ -4,6 +4,7 @@ from access import group_permission_decorator
 from auth.routes import auth_app
 from requests.routes import requests_app
 from reports.routes import reports_app
+from basket.routes import basket_app
 
 app = Flask(__name__)
 
@@ -14,6 +15,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.register_blueprint(auth_app, url_prefix='/auth')
 app.register_blueprint(requests_app, url_prefix='/requests')
 app.register_blueprint(reports_app, url_prefix='/reports')
+app.register_blueprint(basket_app, url_prefix='/basket')
 
 
 @app.route('/')

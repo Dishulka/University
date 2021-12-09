@@ -2,12 +2,14 @@
   "Пользователь": [
       "auth",
       "requests",
+      "basket",
       ""
   ],
   "Админ": [
       "auth",
       "requests",
       "reports",
+      "basket",
       ""
   ],
   "Гость": [
