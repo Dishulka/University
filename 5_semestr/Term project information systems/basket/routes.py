@@ -36,9 +36,9 @@ class ItemTableBasketGoods(Table):
 @group_permission_decorator
 def basket_index():
     if request.method == 'GET':
-        customers_names = SQLServer.request('basket_names_customers.sql')
-        employeers_names = SQLServer.request('basket_names_employees.sql')
-        license_plates = SQLServer.request('basket_license_plates.sql')
+        customers_names = SQLServer.request('basket_get_customers_names.sql')
+        employeers_names = SQLServer.request('basket_get_employees_names.sql')
+        license_plates = SQLServer.request('basket_get_license_plates.sql')
 
         return render_template('basket_index.html', customers_names=customers_names, license_plates=license_plates,
                                employeers_names=employeers_names)
@@ -49,9 +49,9 @@ def basket_index():
         id_employee = request.form.get('employee_name')
         id_car = request.form.get('license_plate')
 
-        SQLServer.update_insert('basket_insert.sql', idCar=id_car, idEmployee=id_employee, idClient=id_customer)
+        SQLServer.update_insert('basket_insert_consignment_note.sql', idCar=id_car, idEmployee=id_employee, idClient=id_customer)
 
-        id_consignment_note = SQLServer.request('basket_find_id_consigment.sql')[0]['idConsignmentNote']
+        id_consignment_note = SQLServer.request('basket_get_id_consigment.sql')[0]['idConsignmentNote']
         session['id_consignment_note'] = id_consignment_note
 
         return redirect(url_for('basket.basket_goods'))
@@ -67,7 +67,7 @@ def basket_goods():
         id_customer = session.get('id_customer')
         id_consignment_note = session.get('id_consignment_note')
 
-        customer_name = SQLServer.request('basket_customer_name.sql', idClient=id_customer)[0]['Name']
+        customer_name = SQLServer.request('basket_get_customer_name.sql', idClient=id_customer)[0]['Name']
         weight = SQLServer.request('basket_get_consignment_note_weight.sql', idConsignmentNote=id_consignment_note)[0][
             'Weight']
 
@@ -115,7 +115,7 @@ def basket_goods():
 
             SQLServer.update_insert('basket_update_consignment_note_weight.sql',
                                     idConsignmentNote=id_consignment_note, weight=0)
-            SQLServer.update_insert('basket_update_clear_goods.sql',
+            SQLServer.update_insert('basket_clear_goods.sql',
                                     idConsignmentNote=id_consignment_note)
 
         return redirect(url_for('basket.basket_goods'))
@@ -136,9 +136,20 @@ def basket_delete_good(id_good):
     SQLServer.update_insert('basket_delete_good.sql', idGood=id_good)
     return redirect(url_for('basket.basket_goods'))
 
-
+ 
 @basket_app.route('/finish')
 @group_permission_decorator
 def basket_finish_order():
+    id_customer = session.get('id_customer')
+    id_consignment_note = session.get('id_consignment_note')
+
+    weight = SQLServer.request('basket_get_consignment_note_weight.sql', idConsignmentNote=id_consignment_note)[0][
+        'Weight']
+    weight_customer = SQLServer.request('basket_get_customer_weight.sql', idClient=id_customer)[0]['TotalWeight']
+
+    SQLServer.update_insert('basket_update_customer_info.sql',
+                            idClient=id_customer,
+                            weight=weight + weight_customer)
+
     session['id_customer'] = -1
     return render_template('basket_finish_order.html')

@@ -12,7 +12,7 @@ SQLServer = SQLMaster(json.load(open('config/configDataBase.json', 'r')))
 
 
 class ItemTableRequestEmployee(Table):
-    Surname = Col('Имя сотрудника')
+    Name = Col('Имя сотрудника')
     Position = Col('Должность')
 
 
