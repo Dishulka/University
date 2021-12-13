@@ -1,3 +1,3 @@
 SELECT *
 FROM consignmentnote
-WHERE idConsignmentNote=LAST_INSERT_ID();
+WHERE idConsignmentNote = LAST_INSERT_ID();

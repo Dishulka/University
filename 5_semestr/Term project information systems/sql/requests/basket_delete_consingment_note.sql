@@ -1,3 +1,3 @@
 DELETE
-FROM goods
+FROM consignmentnote
 WHERE idConsignmentNote = $idConsignmentNote

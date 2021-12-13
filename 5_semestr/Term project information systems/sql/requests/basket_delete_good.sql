@@ -1,1 +1,3 @@
-DELETE FROM goods WHERE idGood=$idGood
+DELETE
+FROM goods
+WHERE idGood = $idGood

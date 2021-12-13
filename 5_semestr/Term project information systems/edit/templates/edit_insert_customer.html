@@ -1,26 +1,26 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-		<title>Редактировать</title>
-  		<meta charset="UTF-8">
-	</head>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Редактировать</title>
+    <meta charset="UTF-8">
+</head>
 
-	<body>
-		<div class="div_like_belt_1">
-			<p class="article_1">Добавление заказчика</p>
-		</div>
+<body>
+<div class="div_like_belt_1">
+    <p class="article_1">Добавление заказчика</p>
+</div>
 
-		<form method="post">
-            <input  type="text" name="name" autofocus placeholder="Имя" required>
-            <input  type="text" name="adress" autofocus placeholder="Адрес" required>
-            <input  type="number" name="total_weight" autofocus placeholder="Суммарный вес" min=0 required>
-            <input  type="date" name="date_total_weight" autofocus placeholder="Дата выставления веса" min=0 required>
-            <button type="submit">Добавить</button>
-		</form>
+<form method="post">
+    <input type="text" name="name" minlength=1 maxlength=45 autofocus placeholder="Имя" required>
+    <input type="text" name="adress" minlength=1 maxlength=45 autofocus placeholder="Адрес" required>
+    <input type="number" name="total_weight" autofocus placeholder="Суммарный вес" min=0 required>
+    <input type="date" name="date_total_weight" autofocus placeholder="Дата выставления веса" required>
+    <button type="submit">Добавить</button>
+</form>
 
-		<div class="div_like_button_1">
-			<a href="{{ url_for('edit.edit_customers') }}" class="a_yellow">Назад</a>
-		</div>
-	</body>
+<div class="div_like_button_1">
+    <a href="{{ url_for('edit.edit_customers') }}" class="a_yellow">Назад</a>
+</div>
+</body>
 </html>

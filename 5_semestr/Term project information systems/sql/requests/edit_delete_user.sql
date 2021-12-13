@@ -1,2 +1,3 @@
-DELETE FROM labs.groupaccess
+DELETE
+FROM labs.groupaccess
 WHERE idGroup = $idGroup

@@ -1,28 +1,28 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-		<title>Запросы</title>
-  		<meta charset="UTF-8">
-	</head>
-	<body>
-		<div class="div_like_belt_1">
-			<p class="article_1">Выберите запрос</p>
-		</div>
-        <div class="div_like_button_2">
-			<a href="{{ url_for('requests.requests_employee') }}">1. Найти работников, взятых в году и месяце</a>
-		</div>
-        <div class="div_like_button_2">
-			<a href="{{ url_for('requests.requests_car') }}">2. Найти автомобили с годом выпуска</a>
-		</div>
-        <div class="div_like_button_2">
-			<a href="{{ url_for('requests.requests_consignment_note') }}">3. Найти количество ТТН в году</a>
-		</div>
-        <div class="div_like_button_2">
-			<a href="{{ url_for('requests.requests_total_weight') }}">4. Найти общий вес груза, перевезенного в году</a>
-		</div>
-        <div class="div_like_button_2">
-			<a href="{{ url_for('index') }}" class="a_yellow">Назад</a>
-		</div>
-	</body>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Запросы</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="div_like_belt_1">
+    <p class="article_1">Выберите запрос</p>
+</div>
+<div class="div_like_button_2">
+    <a href="{{ url_for('requests.requests_employee') }}">1. Найти работников, взятых в году и месяце</a>
+</div>
+<div class="div_like_button_2">
+    <a href="{{ url_for('requests.requests_car') }}">2. Найти автомобили с годом выпуска</a>
+</div>
+<div class="div_like_button_2">
+    <a href="{{ url_for('requests.requests_consignment_note') }}">3. Найти количество ТТН в году</a>
+</div>
+<div class="div_like_button_2">
+    <a href="{{ url_for('requests.requests_total_weight') }}">4. Найти общий вес груза, перевезенного в году</a>
+</div>
+<div class="div_like_button_2">
+    <a href="{{ url_for('index') }}" class="a_yellow">Назад</a>
+</div>
+</body>
 </html>

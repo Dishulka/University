@@ -1,22 +1,22 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-<title>Запрос 1</title>
-<meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Запрос 1</title>
+    <meta charset="UTF-8">
 </head>
 
 <body>
-    <div class="div_like_belt_1">
-			<p class="article_1">Фамилии и должности работников, взятых на работу в N году и M месяце</p>
-    </div>
-    <form method="post">
-        <input type="number" name="year" class="center" min=2000 max=2021 autofocus placeholder="Год" required>
-        <input type="number" name="month" class="center" min=0 max=12 placeholder="Месяц" required>
-        <button type="submit">Поиск</button>
-    </form>
-    <div class="div_like_button_1">
-			<a href="{{ url_for('requests.requests_index') }}" class="a_yellow">Назад</a>
-    </div>
+<div class="div_like_belt_1">
+    <p class="article_1">Фамилии и должности работников, взятых на работу в N году и M месяце</p>
+</div>
+<form method="post">
+    <input type="number" name="year" class="center" min=2000 max=2021 autofocus placeholder="Год" required>
+    <input type="number" name="month" class="center" min=1 max=12 placeholder="Месяц" required>
+    <button type="submit">Поиск</button>
+</form>
+<div class="div_like_button_1">
+    <a href="{{ url_for('requests.requests_index') }}" class="a_yellow">Назад</a>
+</div>
 </body>
 </html>

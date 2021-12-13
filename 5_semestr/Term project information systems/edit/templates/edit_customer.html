@@ -1,27 +1,28 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-		<title>Редактировать</title>
-  		<meta charset="UTF-8">
-	</head>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Редактировать</title>
+    <meta charset="UTF-8">
+</head>
 
-	<body>
-		<div class="div_like_belt_1">
-			<p class="article_1">Заказчик с id={{ id_client }}</p>
-		</div>
+<body>
+<div class="div_like_belt_1">
+    <p class="article_1">Заказчик с id={{ id_client }}</p>
+</div>
 
-		<form method="post">
-            <input  type="text" name="name" placeholder="Имя" autofocus value={{ name }} required>
-            <input  type="text" name="adress" placeholder="Адрес" autofocus value={{ adress }} required>
-            <input  type="number" name="total_weight" placeholder="Суммарный вес" autofocus value={{ total_weight }} required>
-            <input  type="date" name="date_total_weight" placeholder="Дата выставления веса" autofocus value={{ date_total_weight }} required>
+<form method="post">
+    <input type="text" name="name" minlength=1 maxlength=45 placeholder="Имя" autofocus value={{ name }} required>
+    <input type="text" name="adress" minlength=1 maxlength=45 placeholder="Адрес" autofocus value='{{ adress }}' required>
+    <input type="number" name="total_weight" placeholder="Суммарный вес" min=0 autofocus value={{ total_weight }} required>
+    <input type="date" name="date_total_weight" placeholder="Дата выставления веса" autofocus
+           value={{ date_total_weight }} required>
 
-            <button type="submit">Изменить</button>
-		</form>
+    <button type="submit">Изменить</button>
+</form>
 
-		<div class="div_like_button_1">
-			<a href="{{ url_for('edit.edit_customers') }}" class="a_yellow">Назад</a>
-		</div>
-	</body>
+<div class="div_like_button_1">
+    <a href="{{ url_for('edit.edit_customers') }}" class="a_yellow">Назад</a>
+</div>
+</body>
 </html>

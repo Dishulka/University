@@ -3,8 +3,8 @@ import json
 from flask import Blueprint, render_template, request
 from flask_table import Table, Col
 
-from sql.SqlMaster import SQLMaster
 from access import group_permission_decorator
+from sql.SqlMaster import SQLMaster
 
 requests_app = Blueprint('requests', __name__, template_folder='templates')
 
@@ -29,7 +29,7 @@ class ItemTableRequestConsignmentNote(Table):
 
 
 class ItemTableRequestTotalWeight(Table):
-    idClient = Col('Номер клиента')
+    Name = Col('Имя клиента')
     sumWeight = Col('Суммарный вес')
 
 
