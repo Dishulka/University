@@ -1,3 +1,3 @@
 SELECT Weight
 FROM goods
-WHERE idGood=$idGood
+WHERE idGood = $idGood

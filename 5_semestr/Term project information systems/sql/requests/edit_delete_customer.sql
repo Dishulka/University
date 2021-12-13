@@ -1,2 +1,3 @@
-DELETE FROM customer
+DELETE
+FROM customer
 WHERE idClient = $idClient

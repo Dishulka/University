@@ -3,7 +3,17 @@ from pymysql.err import OperationalError
 
 
 class SQLConnect:
+    """
+    Класс для создания соединения с базой данных SQL
+    """
+
     def __init__(self, config: dict):
+        """
+        Конструктор для SQLConnect
+
+        Args:
+            config: dict. Конфигурация для базы данных SQL
+        """
         self.config = config
         self.cursor = None
         self.conn = None

@@ -10,10 +10,18 @@
     <p class="article_1">Добавление товаров для заказчика {{ customer_name }}</p>
 </div>
 
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="article_3"><p class="article_2">{{ message }}</p></div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
 <form method="post">
     <input name="add_note" type="hidden" value=0>
-    <input type="text" name="name" autofocus placeholder="Название товара" required>
-    <input type="number" name="weight" autofocus placeholder="Вес товара" min=0 required>
+    <input type="text" name="name" minlength=1 maxlength=45 autofocus placeholder="Название товара" required>
+    <input type="number" name="weight" autofocus placeholder="Вес товара" min=0 max=2147483647 required>
     <button type="submit">Добавить</button>
 </form>
 
@@ -25,8 +33,13 @@
 <div class="article_3">
     Общий вес: {{ Weight }}
 </div>
-<div class="div_like_button_2">
-    <a href="{{ url_for('basket.basket_finish_order') }}" class="a_yellow">Оформить заказ</a>
-</div>
+<form method="post" class="div_like_button_2">
+    <input name="confirm_order" type="hidden" value=0>
+    <button type="submit">Оформить заказ</button>
+</form>
+<form method="post" class="div_like_button_1">
+    <input name="main_menu" type="hidden" value=0>
+    <button type="submit">В главное меню</button>
+</form>
 </body>
 </html>

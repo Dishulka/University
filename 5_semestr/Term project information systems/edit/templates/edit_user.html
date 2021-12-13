@@ -1,24 +1,24 @@
 <!doctype html>
 <html>
-	<head>
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-		<title>Редактировать</title>
-  		<meta charset="UTF-8">
-	</head>
-	<body>
-		<div class="div_like_belt_1">
-			<p class="article_1">Пользователь с id={{id_group}}</p>
-		</div>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Редактировать</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="div_like_belt_1">
+    <p class="article_1">Пользователь с id={{ id_group }}</p>
+</div>
 
-		<form method="post">
-            <input  type="text" name="login" autofocus value={{ login }} required>
-            <input  type="text" name="password" autofocus value={{ password }} required>
-            <input  type="number" name="access_level" autofocus value={{ accessLevel }} required>
-            <button type="submit">Изменить</button>
-		</form>
+<form method="post">
+    <input type="text" name="login" minlength=1 maxlength=45 autofocus value={{ login }} required>
+    <input type="text" name="password" minlength=1 maxlength=45 autofocus value={{ password }} required>
+    <input type="number" name="access_level" min=1 max=3 autofocus value={{ accessLevel }} required>
+    <button type="submit">Изменить</button>
+</form>
 
-		<div class="div_like_button_1">
-			<a href="{{ url_for('edit.edit_users') }}" class="a_yellow">Назад</a>
-		</div>
-	</body>
+<div class="div_like_button_1">
+    <a href="{{ url_for('edit.edit_users') }}" class="a_yellow">Назад</a>
+</div>
+</body>
 </html>

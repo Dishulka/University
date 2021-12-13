@@ -4,11 +4,9 @@ from flask import session, current_app, request, render_template
 
 
 def group_permission_validation():
-    return True
     access_config = current_app.config['ACCESS_CONFIG']
     group_name = session.get('group_name', 'Гость')
     target_app = request.endpoint.split(sep='.')
-
     if len(target_app) == 1:
         target_app = ""
     else:

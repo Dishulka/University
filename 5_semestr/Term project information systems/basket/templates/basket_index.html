@@ -5,36 +5,36 @@
     <meta charset="UTF-8">
     <title>Оформление заказа</title>
 </head>
-<body >
-    <div class="div_like_belt_1">
-        <p class="article_1">Выбирите закачика, работника и машину</p>
-    </div>
-    <form method="post" class="article_5">
-        Заказчик
-        <select name="customer_name">
-            {% for customer_name in customers_names %}
-                <option value="{{ customer_name['idClient'] }}">{{ customer_name['Name'] }}</option>
-            {% endfor %}
-        </select>
-        Работник
-        <select name="employee_name">
-            {% for employee_name in employeers_names %}
-                <option value="{{ employee_name['idEmployee'] }}">{{ employee_name['Name'] }}</option>
-            {% endfor %}
-        </select>
-        Машина
-        <select name="license_plate">
-            {% for license_plate in license_plates %}
-                <option value="{{ license_plate['idCar'] }}" >{{ license_plate['LicensePlateNumber'] }}</option>
-            {% endfor %}
-        </select>
+<body>
+<div class="div_like_belt_1">
+    <p class="article_1">Выбирите закачика, работника и машину</p>
+</div>
+<form method="post" class="article_5">
+    Заказчик
+    <select name="customer_name">
+        {% for customer_name in customers_names %}
+            <option value="{{ customer_name['idClient'] }}">{{ customer_name['Name'] }}</option>
+        {% endfor %}
+    </select>
+    Работник
+    <select name="employee_name">
+        {% for employee_name in employeers_names %}
+            <option value="{{ employee_name['idEmployee'] }}">{{ employee_name['Name'] }}</option>
+        {% endfor %}
+    </select>
+    Машина
+    <select name="license_plate">
+        {% for license_plate in license_plates %}
+            <option value="{{ license_plate['idCar'] }}">{{ license_plate['LicensePlateNumber'] }}</option>
+        {% endfor %}
+    </select>
 
-        <button type="submit">Далее</button>
-    </form>
+    <button type="submit">Далее</button>
+</form>
 
-    <div class="div_like_button_1">
-			<a href="{{ url_for('index') }}" class="a_yellow">Назад</a>
-    </div>
+<div class="div_like_button_1">
+    <a href="{{ url_for('index') }}" class="a_yellow">В главное меню</a>
+</div>
 
 </body>
 </html>

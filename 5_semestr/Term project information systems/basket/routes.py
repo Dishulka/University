@@ -1,6 +1,6 @@
 import json
 
-from flask import Blueprint, render_template, request, session, redirect, url_for
+from flask import Blueprint, render_template, request, session, redirect, url_for, flash
 from flask_table import Col, Table
 from flask_table.html import element
 
@@ -49,7 +49,8 @@ def basket_index():
         id_employee = request.form.get('employee_name')
         id_car = request.form.get('license_plate')
 
-        SQLServer.update_insert('basket_insert_consignment_note.sql', idCar=id_car, idEmployee=id_employee, idClient=id_customer)
+        SQLServer.update_insert('basket_insert_consignment_note.sql', idCar=id_car, idEmployee=id_employee,
+                                idClient=id_customer)
 
         id_consignment_note = SQLServer.request('basket_get_id_consigment.sql')[0]['idConsignmentNote']
         session['id_consignment_note'] = id_consignment_note
@@ -110,6 +111,7 @@ def basket_goods():
             SQLServer.update_insert('basket_update_consignment_note_weight.sql',
                                     idConsignmentNote=id_consignment_note,
                                     weight=int(weight) + weight_note)
+
         if request.form.get('clear_note', -1) == '0':
             id_consignment_note = session.get('id_consignment_note')
 
@@ -117,6 +119,27 @@ def basket_goods():
                                     idConsignmentNote=id_consignment_note, weight=0)
             SQLServer.update_insert('basket_clear_goods.sql',
                                     idConsignmentNote=id_consignment_note)
+
+        if request.form.get('confirm_order', -1) == '0':
+            count_goods = SQLServer.request('basket_get_count_goods.sql',
+                                            idConsignmentNote=session.get('id_consignment_note'))[0]['COUNT(idGood)']
+            if count_goods > 0:
+                redirect(url_for('basket.basket_finish_order'))
+            else:
+                flash('Нет товаров в заказе')
+
+        if request.form.get('main_menu', -1) == '0':
+            if SQLServer.request('basket_get_count_goods.sql',
+                                 idConsignmentNote=session.get('id_consignment_note'))[0]['COUNT(idGood)'] > 0:
+                SQLServer.update_insert('basket_delete_goods.sql',
+                                        idConsignmentNote=session.get('id_consignment_note'))
+
+            SQLServer.update_insert('basket_delete_consingment_note.sql',
+                                    idConsignmentNote=session.get('id_consignment_note'))
+
+            session['id_consignment_note'] = ""
+            session['id_customer'] = ""
+            return redirect(url_for('index'))
 
         return redirect(url_for('basket.basket_goods'))
 
@@ -136,7 +159,7 @@ def basket_delete_good(id_good):
     SQLServer.update_insert('basket_delete_good.sql', idGood=id_good)
     return redirect(url_for('basket.basket_goods'))
 
- 
+
 @basket_app.route('/finish')
 @group_permission_decorator
 def basket_finish_order():
