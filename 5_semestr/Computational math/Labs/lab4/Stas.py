@@ -49,17 +49,16 @@ def plotData(A, principalComponents, scatter):
     plt.xlabel(r'$x_1$')
     plt.ylabel(r'$x_2$')
     plt.grid()
-    plt.savefig(f'.\Figures\data.svg')
     plt.show()
 
 
-def plotStandardDeviation(s_d):
+def plotStandardDeviation(standartDeviation):
+    plt.rcParams['font.size']=18
     plt.figure(figsize=(14, 7))
-    plt.plot(1. + np.arange(len(s_d)), s_d, 'o--')
+    plt.plot(1. + np.arange(len(standartDeviation)), standartDeviation, 'o--')
     plt.xlabel(r'$i$')
     plt.ylabel(r'$\sqrt{\nu} \sigma_i$')
     plt.grid()
-    plt.savefig(f'.\Figures\Standard_deviation.svg')
     plt.show()
 
 
